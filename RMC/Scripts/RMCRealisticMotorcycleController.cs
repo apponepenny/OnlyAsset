@@ -90,7 +90,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	public Animator Anim;
 
 	public float AddSpeedSec = 0;
-	public int EndAddSpeedSec = 4;
+	int EndAddSpeedSec = 0;
 	float AddSpeedt;
 
 	GameObject Effect;
