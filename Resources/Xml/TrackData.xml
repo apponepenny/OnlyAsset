@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TrackDataInfo>
+    <Data>
+        <Name>1_1</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>300</EnemyTopSpeed>
+        <Lap>3</Lap>
+
+    </Data>
+
+    <Data>
+        <Name>1_2</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>120</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>1_3</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>1_4</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>140</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>2_1</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>2_2</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>2_3</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>2_4</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>140</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>3_1</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>3_2</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>3_3</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>3_4</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>140</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>4_1</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>4_2</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>4_3</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>4_4</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>140</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+    <Data>
+        <Name>5_1</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>5_2</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>5_3</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>5_4</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>140</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+    <Data>
+        <Name>6_1</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>6_2</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>6_3</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>6_4</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>140</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+    <Data>
+        <Name>7_1</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>7_2</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>7_3</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>7_4</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+    <Data>
+        <Name>8_1</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>8_2</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>8_3</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>3</Lap>
+        
+    </Data>
+
+    <Data>
+        <Name>8_4</Name>
+        <Require>0</Require>
+        <EnemyTopSpeed>130</EnemyTopSpeed>
+        <Lap>2</Lap>
+        
+    </Data>
+
+
+
+
+</TrackDataInfo>

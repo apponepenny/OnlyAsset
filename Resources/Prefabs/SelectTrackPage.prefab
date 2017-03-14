@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &106444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 460686}
+  - 114: {fileID: 11460518}
+  m_Layer: 5
+  m_Name: Track
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!1 &114230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 423354}
+  m_Layer: 0
+  m_Name: SelectTrackPage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &423354
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children:
+  - {fileID: 460686}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &460686
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106444}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 423354}
+  m_RootOrder: 0
+--- !u!114 &11460518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23eb67cdf83b03541b0b1317dad4cc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectNum: 0
+  ComponentSprite: []
+  ScreenLoad: {fileID: 127404, guid: a92c55ed7f73c43dfa7cead586ad60e9, type: 2}
+  AllTrack:
+  - Track:
+    - {fileID: 21300000, guid: b9a0469300c074881b219e8431d19477, type: 3}
+    - {fileID: 21300000, guid: c8df9d01090fe4c1dbc61b81060b6dcb, type: 3}
+    - {fileID: 21300000, guid: 5eae7b5c901494c51bce4e8e1da497c9, type: 3}
+    - {fileID: 21300000, guid: 59678beb99f26425581777c4d3e5a17b, type: 3}
+  - Track:
+    - {fileID: 21300000, guid: 030960d5be3db417e98dc314552dc76a, type: 3}
+    - {fileID: 21300000, guid: 77d9869293fef48c0ac1238c0c1b745b, type: 3}
+    - {fileID: 21300000, guid: d7accc3ad1fa442d79119db5c5ad3a2a, type: 3}
+    - {fileID: 21300000, guid: 7dcab392d5d854de89248bb7b1318a61, type: 3}
+  - Track:
+    - {fileID: 21300000, guid: 9489e1f61c2fd4f1ea7c0763e2b8b957, type: 3}
+    - {fileID: 21300000, guid: aabc2d380253f4003a8b9aba43f09501, type: 3}
+    - {fileID: 21300000, guid: 996b2c9fc634d45a48d9a9e181696b67, type: 3}
+    - {fileID: 21300000, guid: 73571ce2f77c4418ebb0ab9d616093f4, type: 3}
+  - Track:
+    - {fileID: 21300000, guid: cca385c640ddb4a35982b716792c6867, type: 3}
+    - {fileID: 21300000, guid: abb6f2f7ba9c34b3ca800660abc48754, type: 3}
+    - {fileID: 21300000, guid: 63f5b7ba2f97e48a4828c7f66bfda76a, type: 3}
+    - {fileID: 21300000, guid: cec5856abbdaf41928dbb3b936ddd98b, type: 3}
+  - Track:
+    - {fileID: 21300000, guid: 5f7468345471147229ddcd87ce1f2388, type: 3}
+    - {fileID: 21300000, guid: e04811f0a85a34ffd962216390f44218, type: 3}
+    - {fileID: 21300000, guid: dd8b2592361cb4cf5971ccdc71232ff2, type: 3}
+    - {fileID: 21300000, guid: afa15af6993934eea834c80db5623422, type: 3}
+  - Track:
+    - {fileID: 21300000, guid: 37e36cb01b9344b52b5df8bbb279a2b8, type: 3}
+    - {fileID: 21300000, guid: 800b7a7bddae64230b5b69a1baa7a9a6, type: 3}
+    - {fileID: 21300000, guid: 5989dce4f0c404ef6afc46751772be6f, type: 3}
+    - {fileID: 21300000, guid: 1a49f587d22264fdcb37fcab4d1ef771, type: 3}
+  - Track:
+    - {fileID: 21300000, guid: ca49a5c00404f4fafbb92fea23d6441a, type: 3}
+    - {fileID: 21300000, guid: 95d2f6625d18a45869f5a2f004c35810, type: 3}
+    - {fileID: 21300000, guid: 5e7ca83cdd7ea49adb2433ee97ea8980, type: 3}
+    - {fileID: 21300000, guid: 481543a5ccde344e6b6a91bee6622b88, type: 3}
+  - Track:
+    - {fileID: 21300000, guid: 3134b9a235dab437bbe76e4e8dba303b, type: 3}
+    - {fileID: 21300000, guid: c61a1fdd7aedf4523817b89453a6d24d, type: 3}
+    - {fileID: 21300000, guid: 735d5e6e24be2471ca12c1a2e6dd8e6d, type: 3}
+    - {fileID: 21300000, guid: ed87b84f3175e4b23b2873c024652493, type: 3}
+  LightStar: {fileID: 21300000, guid: b0afb83e5b04b4b3396e7653c354ff49, type: 3}
+  SelectMapPage: {fileID: 165846, guid: 90cac9317dd188242b558cb795010279, type: 2}
+  StarCount: {fileID: 0}
+  ChooseYourView: {fileID: 116592, guid: 4227978a78b6c40dc9ea08b86c091ec8, type: 2}
+  ControlPage: {fileID: 194490, guid: 9edabb91684c849d6b13d8f61d53fa4f, type: 2}
+  LeftNext: {fileID: 0}
+  RightNext: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 114230}
+  m_IsPrefabParent: 1

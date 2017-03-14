@@ -1,0 +1,2155 @@
+fileFormatVersion: 2
+guid: bb65da7287d254b92bcb9ce36af1962f
+timeCreated: 1471322989
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: car1_fin:back
+    100002: car1_fin:car
+    100004: car1_fin:car1_wing_pPlane8
+    100006: car1_fin:left
+    100008: car1_fin:pCube205
+    100010: car1_fin:pCube214
+    100012: car1_fin:pCube215
+    100014: car1_fin:pCube217
+    100016: car1_fin:pCube218
+    100018: car1_fin:pCube219
+    100020: car1_fin:pCube220
+    100022: car1_fin:pCube221
+    100024: car1_fin:pCube222
+    100026: car1_fin:pCube223
+    100028: car1_fin:pCube224
+    100030: car1_fin:pCube225
+    100032: car1_fin:pCube226
+    100034: car1_fin:pCube227
+    100036: car1_fin:pCube228
+    100038: car1_fin:pCube229
+    100040: car1_fin:pCube230
+    100042: car1_fin:pCube250
+    100044: car1_fin:pCube251
+    100046: car1_fin:pCube252
+    100048: car1_fin:pCube253
+    100050: car1_fin:pCube254
+    100052: car1_fin:pCube255
+    100054: car1_fin:pCube256
+    100056: car1_fin:pCube257
+    100058: car1_fin:pCube258
+    100060: car1_fin:pCube259
+    100062: car1_fin:pCube260
+    100064: car1_fin:pCube267
+    100066: car1_fin:pCube268
+    100068: car1_fin:pCube269
+    100070: car1_fin:pCube271
+    100072: car1_fin:pCube272
+    100074: car1_fin:pCube274
+    100076: car1_fin:pCube275
+    100078: car1_fin:pCube276
+    100080: car1_fin:pCube277
+    100082: car1_fin:pCube278
+    100084: car1_fin:pCube279
+    100086: car1_fin:pCube280
+    100088: car1_fin:pCube281
+    100090: car1_fin:pCube282
+    100092: car1_fin:pCube283
+    100094: car1_fin:pCube285
+    100096: car1_fin:pCube58
+    100098: car1_fin:pCube59
+    100100: car1_fin:pCube62
+    100102: car1_fin:pCube64
+    100104: car1_fin:pCube65
+    100106: car1_fin:pCube66
+    100108: car1_fin:pCube67
+    100110: car1_fin:pCube70
+    100112: car1_fin:pCylinder100
+    100114: car1_fin:pCylinder101
+    100116: car1_fin:pCylinder102
+    100118: car1_fin:pCylinder103
+    100120: car1_fin:pCylinder104
+    100122: car1_fin:pCylinder105
+    100124: car1_fin:pCylinder118
+    100126: car1_fin:pCylinder119
+    100128: car1_fin:pCylinder120
+    100130: car1_fin:pCylinder121
+    100132: car1_fin:pCylinder122
+    100134: car1_fin:pCylinder123
+    100136: car1_fin:pCylinder125
+    100138: car1_fin:pCylinder126
+    100140: car1_fin:pCylinder127
+    100142: car1_fin:pCylinder70
+    100144: car1_fin:pCylinder71
+    100146: car1_fin:pCylinder72
+    100148: car1_fin:pCylinder73
+    100150: car1_fin:pCylinder74
+    100152: car1_fin:pCylinder75
+    100154: car1_fin:pCylinder76
+    100156: car1_fin:pCylinder77
+    100158: car1_fin:pCylinder78
+    100160: car1_fin:pCylinder79
+    100162: car1_fin:pCylinder80
+    100164: car1_fin:pCylinder81
+    100166: car1_fin:pCylinder82
+    100168: car1_fin:pCylinder83
+    100170: car1_fin:pCylinder84
+    100172: car1_fin:pCylinder85
+    100174: car1_fin:pCylinder86
+    100176: car1_fin:pCylinder87
+    100178: car1_fin:pCylinder88
+    100180: car1_fin:pCylinder89
+    100182: car1_fin:pCylinder90
+    100184: car1_fin:pCylinder91
+    100186: car1_fin:pCylinder92
+    100188: car1_fin:pCylinder93
+    100190: car1_fin:pCylinder94
+    100192: car1_fin:pCylinder95
+    100194: car1_fin:pCylinder96
+    100196: car1_fin:pCylinder97
+    100198: car1_fin:pCylinder98
+    100200: car1_fin:pCylinder99
+    100202: car1_fin:polySurface103
+    100204: car1_fin:polySurface104
+    100206: car1_fin:polySurface105
+    100208: car1_fin:polySurface106
+    100210: car1_fin:polySurface109
+    100212: car1_fin:polySurface111
+    100214: car1_fin:polySurface226
+    100216: car1_fin:polySurface232
+    100218: car1_fin:polySurface236
+    100220: car1_fin:polySurface237
+    100222: car1_fin:polySurface238
+    100224: car1_fin:polySurface239
+    100226: car1_fin:polySurface240
+    100228: car1_fin:polySurface242
+    100230: car1_fin:polySurface244
+    100232: car1_fin:polySurface245
+    100234: car1_fin:polySurface246
+    100236: car1_fin:polySurface247
+    100238: car1_fin:polySurface249
+    100240: car1_fin:polySurface250
+    100242: car1_fin:polySurface251
+    100244: car1_fin:polySurface252
+    100246: car1_fin:polySurface91
+    100248: car1_fin:polySurface97
+    100250: car1_fin:polySurface99
+    100252: car1_fin:pPipe14
+    100254: car1_fin:pPipe15
+    100256: car1_fin:pPipe16
+    100258: car1_fin:pPipe17
+    100260: car1_fin:pPipe18
+    100262: car1_fin:pPipe19
+    100264: car1_fin:pPipe20
+    100266: car1_fin:pPipe21
+    100268: car1_fin:pPlane30
+    100270: car1_fin:pPlane31
+    100272: car1_fin:pPlane32
+    100274: car1_fin:pPlane34
+    100276: car1_fin:pPlane35
+    100278: car1_fin:pPlane37
+    100280: car1_fin:pPlane39
+    100282: car1_fin:pTorus5
+    100284: car1_fin:transform1
+    100286: car1_fin:transform2
+    100288: Driver_Mesh
+    100290: joint1
+    100292: joint10
+    100294: joint11
+    100296: joint12
+    100298: joint13
+    100300: joint14
+    100302: joint15
+    100304: joint16
+    100306: joint17
+    100308: joint18
+    100310: joint19
+    100312: joint2
+    100314: joint20
+    100316: joint21
+    100318: joint22
+    100320: joint23
+    100322: joint24
+    100324: joint25
+    100326: joint26
+    100328: joint27
+    100330: joint28
+    100332: joint29
+    100334: joint3
+    100336: joint30
+    100338: joint31
+    100340: joint4
+    100342: joint5
+    100344: joint6
+    100346: joint7
+    100348: joint8
+    100350: joint9
+    100352: nurbsCircle1
+    100354: polySurface1
+    100356: polySurface10
+    100358: polySurface11
+    100360: polySurface12
+    100362: polySurface13
+    100364: polySurface3
+    100366: polySurface4
+    100368: polySurface5
+    100370: polySurface6
+    100372: polySurface7
+    100374: polySurface8
+    100376: polySurface9
+    100378: //RootNode
+    100380: transform1
+    100382: transform2
+    100384: transform3
+    100386: transform4
+    100388: transform5
+    100390: transform6
+    400000: car1_fin:back
+    400002: car1_fin:car
+    400004: car1_fin:car1_wing_pPlane8
+    400006: car1_fin:left
+    400008: car1_fin:pCube205
+    400010: car1_fin:pCube214
+    400012: car1_fin:pCube215
+    400014: car1_fin:pCube217
+    400016: car1_fin:pCube218
+    400018: car1_fin:pCube219
+    400020: car1_fin:pCube220
+    400022: car1_fin:pCube221
+    400024: car1_fin:pCube222
+    400026: car1_fin:pCube223
+    400028: car1_fin:pCube224
+    400030: car1_fin:pCube225
+    400032: car1_fin:pCube226
+    400034: car1_fin:pCube227
+    400036: car1_fin:pCube228
+    400038: car1_fin:pCube229
+    400040: car1_fin:pCube230
+    400042: car1_fin:pCube250
+    400044: car1_fin:pCube251
+    400046: car1_fin:pCube252
+    400048: car1_fin:pCube253
+    400050: car1_fin:pCube254
+    400052: car1_fin:pCube255
+    400054: car1_fin:pCube256
+    400056: car1_fin:pCube257
+    400058: car1_fin:pCube258
+    400060: car1_fin:pCube259
+    400062: car1_fin:pCube260
+    400064: car1_fin:pCube267
+    400066: car1_fin:pCube268
+    400068: car1_fin:pCube269
+    400070: car1_fin:pCube271
+    400072: car1_fin:pCube272
+    400074: car1_fin:pCube274
+    400076: car1_fin:pCube275
+    400078: car1_fin:pCube276
+    400080: car1_fin:pCube277
+    400082: car1_fin:pCube278
+    400084: car1_fin:pCube279
+    400086: car1_fin:pCube280
+    400088: car1_fin:pCube281
+    400090: car1_fin:pCube282
+    400092: car1_fin:pCube283
+    400094: car1_fin:pCube285
+    400096: car1_fin:pCube58
+    400098: car1_fin:pCube59
+    400100: car1_fin:pCube62
+    400102: car1_fin:pCube64
+    400104: car1_fin:pCube65
+    400106: car1_fin:pCube66
+    400108: car1_fin:pCube67
+    400110: car1_fin:pCube70
+    400112: car1_fin:pCylinder100
+    400114: car1_fin:pCylinder101
+    400116: car1_fin:pCylinder102
+    400118: car1_fin:pCylinder103
+    400120: car1_fin:pCylinder104
+    400122: car1_fin:pCylinder105
+    400124: car1_fin:pCylinder118
+    400126: car1_fin:pCylinder119
+    400128: car1_fin:pCylinder120
+    400130: car1_fin:pCylinder121
+    400132: car1_fin:pCylinder122
+    400134: car1_fin:pCylinder123
+    400136: car1_fin:pCylinder125
+    400138: car1_fin:pCylinder126
+    400140: car1_fin:pCylinder127
+    400142: car1_fin:pCylinder70
+    400144: car1_fin:pCylinder71
+    400146: car1_fin:pCylinder72
+    400148: car1_fin:pCylinder73
+    400150: car1_fin:pCylinder74
+    400152: car1_fin:pCylinder75
+    400154: car1_fin:pCylinder76
+    400156: car1_fin:pCylinder77
+    400158: car1_fin:pCylinder78
+    400160: car1_fin:pCylinder79
+    400162: car1_fin:pCylinder80
+    400164: car1_fin:pCylinder81
+    400166: car1_fin:pCylinder82
+    400168: car1_fin:pCylinder83
+    400170: car1_fin:pCylinder84
+    400172: car1_fin:pCylinder85
+    400174: car1_fin:pCylinder86
+    400176: car1_fin:pCylinder87
+    400178: car1_fin:pCylinder88
+    400180: car1_fin:pCylinder89
+    400182: car1_fin:pCylinder90
+    400184: car1_fin:pCylinder91
+    400186: car1_fin:pCylinder92
+    400188: car1_fin:pCylinder93
+    400190: car1_fin:pCylinder94
+    400192: car1_fin:pCylinder95
+    400194: car1_fin:pCylinder96
+    400196: car1_fin:pCylinder97
+    400198: car1_fin:pCylinder98
+    400200: car1_fin:pCylinder99
+    400202: car1_fin:polySurface103
+    400204: car1_fin:polySurface104
+    400206: car1_fin:polySurface105
+    400208: car1_fin:polySurface106
+    400210: car1_fin:polySurface109
+    400212: car1_fin:polySurface111
+    400214: car1_fin:polySurface226
+    400216: car1_fin:polySurface232
+    400218: car1_fin:polySurface236
+    400220: car1_fin:polySurface237
+    400222: car1_fin:polySurface238
+    400224: car1_fin:polySurface239
+    400226: car1_fin:polySurface240
+    400228: car1_fin:polySurface242
+    400230: car1_fin:polySurface244
+    400232: car1_fin:polySurface245
+    400234: car1_fin:polySurface246
+    400236: car1_fin:polySurface247
+    400238: car1_fin:polySurface249
+    400240: car1_fin:polySurface250
+    400242: car1_fin:polySurface251
+    400244: car1_fin:polySurface252
+    400246: car1_fin:polySurface91
+    400248: car1_fin:polySurface97
+    400250: car1_fin:polySurface99
+    400252: car1_fin:pPipe14
+    400254: car1_fin:pPipe15
+    400256: car1_fin:pPipe16
+    400258: car1_fin:pPipe17
+    400260: car1_fin:pPipe18
+    400262: car1_fin:pPipe19
+    400264: car1_fin:pPipe20
+    400266: car1_fin:pPipe21
+    400268: car1_fin:pPlane30
+    400270: car1_fin:pPlane31
+    400272: car1_fin:pPlane32
+    400274: car1_fin:pPlane34
+    400276: car1_fin:pPlane35
+    400278: car1_fin:pPlane37
+    400280: car1_fin:pPlane39
+    400282: car1_fin:pTorus5
+    400284: car1_fin:transform1
+    400286: car1_fin:transform2
+    400288: Driver_Mesh
+    400290: joint1
+    400292: joint10
+    400294: joint11
+    400296: joint12
+    400298: joint13
+    400300: joint14
+    400302: joint15
+    400304: joint16
+    400306: joint17
+    400308: joint18
+    400310: joint19
+    400312: joint2
+    400314: joint20
+    400316: joint21
+    400318: joint22
+    400320: joint23
+    400322: joint24
+    400324: joint25
+    400326: joint26
+    400328: joint27
+    400330: joint28
+    400332: joint29
+    400334: joint3
+    400336: joint30
+    400338: joint31
+    400340: joint4
+    400342: joint5
+    400344: joint6
+    400346: joint7
+    400348: joint8
+    400350: joint9
+    400352: nurbsCircle1
+    400354: polySurface1
+    400356: polySurface10
+    400358: polySurface11
+    400360: polySurface12
+    400362: polySurface13
+    400364: polySurface3
+    400366: polySurface4
+    400368: polySurface5
+    400370: polySurface6
+    400372: polySurface7
+    400374: polySurface8
+    400376: polySurface9
+    400378: //RootNode
+    400380: transform1
+    400382: transform2
+    400384: transform3
+    400386: transform4
+    400388: transform5
+    400390: transform6
+    2300000: car1_fin:car1_wing_pPlane8
+    2300002: car1_fin:pCube205
+    2300004: car1_fin:pCube214
+    2300006: car1_fin:pCube215
+    2300008: car1_fin:pCube217
+    2300010: car1_fin:pCube218
+    2300012: car1_fin:pCube219
+    2300014: car1_fin:pCube220
+    2300016: car1_fin:pCube221
+    2300018: car1_fin:pCube222
+    2300020: car1_fin:pCube223
+    2300022: car1_fin:pCube224
+    2300024: car1_fin:pCube225
+    2300026: car1_fin:pCube226
+    2300028: car1_fin:pCube227
+    2300030: car1_fin:pCube228
+    2300032: car1_fin:pCube229
+    2300034: car1_fin:pCube230
+    2300036: car1_fin:pCube250
+    2300038: car1_fin:pCube251
+    2300040: car1_fin:pCube252
+    2300042: car1_fin:pCube253
+    2300044: car1_fin:pCube254
+    2300046: car1_fin:pCube255
+    2300048: car1_fin:pCube256
+    2300050: car1_fin:pCube257
+    2300052: car1_fin:pCube258
+    2300054: car1_fin:pCube259
+    2300056: car1_fin:pCube260
+    2300058: car1_fin:pCube267
+    2300060: car1_fin:pCube268
+    2300062: car1_fin:pCube269
+    2300064: car1_fin:pCube272
+    2300066: car1_fin:pCube274
+    2300068: car1_fin:pCube275
+    2300070: car1_fin:pCube276
+    2300072: car1_fin:pCube277
+    2300074: car1_fin:pCube278
+    2300076: car1_fin:pCube279
+    2300078: car1_fin:pCube280
+    2300080: car1_fin:pCube281
+    2300082: car1_fin:pCube282
+    2300084: car1_fin:pCube283
+    2300086: car1_fin:pCube285
+    2300088: car1_fin:pCube58
+    2300090: car1_fin:pCube59
+    2300092: car1_fin:pCube62
+    2300094: car1_fin:pCube64
+    2300096: car1_fin:pCube65
+    2300098: car1_fin:pCube66
+    2300100: car1_fin:pCube67
+    2300102: car1_fin:pCube70
+    2300104: car1_fin:pCylinder100
+    2300106: car1_fin:pCylinder101
+    2300108: car1_fin:pCylinder102
+    2300110: car1_fin:pCylinder103
+    2300112: car1_fin:pCylinder104
+    2300114: car1_fin:pCylinder105
+    2300116: car1_fin:pCylinder118
+    2300118: car1_fin:pCylinder119
+    2300120: car1_fin:pCylinder120
+    2300122: car1_fin:pCylinder121
+    2300124: car1_fin:pCylinder122
+    2300126: car1_fin:pCylinder123
+    2300128: car1_fin:pCylinder125
+    2300130: car1_fin:pCylinder126
+    2300132: car1_fin:pCylinder127
+    2300134: car1_fin:pCylinder70
+    2300136: car1_fin:pCylinder71
+    2300138: car1_fin:pCylinder72
+    2300140: car1_fin:pCylinder73
+    2300142: car1_fin:pCylinder74
+    2300144: car1_fin:pCylinder75
+    2300146: car1_fin:pCylinder76
+    2300148: car1_fin:pCylinder77
+    2300150: car1_fin:pCylinder78
+    2300152: car1_fin:pCylinder79
+    2300154: car1_fin:pCylinder80
+    2300156: car1_fin:pCylinder81
+    2300158: car1_fin:pCylinder82
+    2300160: car1_fin:pCylinder83
+    2300162: car1_fin:pCylinder84
+    2300164: car1_fin:pCylinder85
+    2300166: car1_fin:pCylinder86
+    2300168: car1_fin:pCylinder87
+    2300170: car1_fin:pCylinder88
+    2300172: car1_fin:pCylinder89
+    2300174: car1_fin:pCylinder90
+    2300176: car1_fin:pCylinder91
+    2300178: car1_fin:pCylinder92
+    2300180: car1_fin:pCylinder93
+    2300182: car1_fin:pCylinder94
+    2300184: car1_fin:pCylinder95
+    2300186: car1_fin:pCylinder96
+    2300188: car1_fin:pCylinder97
+    2300190: car1_fin:pCylinder98
+    2300192: car1_fin:pCylinder99
+    2300194: car1_fin:polySurface103
+    2300196: car1_fin:polySurface104
+    2300198: car1_fin:polySurface106
+    2300200: car1_fin:polySurface109
+    2300202: car1_fin:polySurface111
+    2300204: car1_fin:polySurface232
+    2300206: car1_fin:polySurface236
+    2300208: car1_fin:polySurface237
+    2300210: car1_fin:polySurface238
+    2300212: car1_fin:polySurface239
+    2300214: car1_fin:polySurface240
+    2300216: car1_fin:polySurface245
+    2300218: car1_fin:polySurface246
+    2300220: car1_fin:polySurface247
+    2300222: car1_fin:polySurface249
+    2300224: car1_fin:polySurface250
+    2300226: car1_fin:polySurface251
+    2300228: car1_fin:polySurface252
+    2300230: car1_fin:polySurface91
+    2300232: car1_fin:polySurface99
+    2300234: car1_fin:pPipe14
+    2300236: car1_fin:pPipe15
+    2300238: car1_fin:pPipe16
+    2300240: car1_fin:pPipe17
+    2300242: car1_fin:pPipe18
+    2300244: car1_fin:pPipe19
+    2300246: car1_fin:pPipe20
+    2300248: car1_fin:pPipe21
+    2300250: car1_fin:pPlane30
+    2300252: car1_fin:pPlane31
+    2300254: car1_fin:pPlane32
+    2300256: car1_fin:pPlane34
+    2300258: car1_fin:pPlane35
+    2300260: polySurface1
+    2300262: polySurface10
+    2300264: polySurface11
+    2300266: polySurface12
+    2300268: polySurface13
+    2300270: polySurface3
+    2300272: polySurface4
+    2300274: polySurface5
+    2300276: polySurface6
+    2300278: polySurface7
+    2300280: polySurface8
+    2300282: polySurface9
+    3300000: car1_fin:car1_wing_pPlane8
+    3300002: car1_fin:pCube205
+    3300004: car1_fin:pCube214
+    3300006: car1_fin:pCube215
+    3300008: car1_fin:pCube217
+    3300010: car1_fin:pCube218
+    3300012: car1_fin:pCube219
+    3300014: car1_fin:pCube220
+    3300016: car1_fin:pCube221
+    3300018: car1_fin:pCube222
+    3300020: car1_fin:pCube223
+    3300022: car1_fin:pCube224
+    3300024: car1_fin:pCube225
+    3300026: car1_fin:pCube226
+    3300028: car1_fin:pCube227
+    3300030: car1_fin:pCube228
+    3300032: car1_fin:pCube229
+    3300034: car1_fin:pCube230
+    3300036: car1_fin:pCube250
+    3300038: car1_fin:pCube251
+    3300040: car1_fin:pCube252
+    3300042: car1_fin:pCube253
+    3300044: car1_fin:pCube254
+    3300046: car1_fin:pCube255
+    3300048: car1_fin:pCube256
+    3300050: car1_fin:pCube257
+    3300052: car1_fin:pCube258
+    3300054: car1_fin:pCube259
+    3300056: car1_fin:pCube260
+    3300058: car1_fin:pCube267
+    3300060: car1_fin:pCube268
+    3300062: car1_fin:pCube269
+    3300064: car1_fin:pCube272
+    3300066: car1_fin:pCube274
+    3300068: car1_fin:pCube275
+    3300070: car1_fin:pCube276
+    3300072: car1_fin:pCube277
+    3300074: car1_fin:pCube278
+    3300076: car1_fin:pCube279
+    3300078: car1_fin:pCube280
+    3300080: car1_fin:pCube281
+    3300082: car1_fin:pCube282
+    3300084: car1_fin:pCube283
+    3300086: car1_fin:pCube285
+    3300088: car1_fin:pCube58
+    3300090: car1_fin:pCube59
+    3300092: car1_fin:pCube62
+    3300094: car1_fin:pCube64
+    3300096: car1_fin:pCube65
+    3300098: car1_fin:pCube66
+    3300100: car1_fin:pCube67
+    3300102: car1_fin:pCube70
+    3300104: car1_fin:pCylinder100
+    3300106: car1_fin:pCylinder101
+    3300108: car1_fin:pCylinder102
+    3300110: car1_fin:pCylinder103
+    3300112: car1_fin:pCylinder104
+    3300114: car1_fin:pCylinder105
+    3300116: car1_fin:pCylinder118
+    3300118: car1_fin:pCylinder119
+    3300120: car1_fin:pCylinder120
+    3300122: car1_fin:pCylinder121
+    3300124: car1_fin:pCylinder122
+    3300126: car1_fin:pCylinder123
+    3300128: car1_fin:pCylinder125
+    3300130: car1_fin:pCylinder126
+    3300132: car1_fin:pCylinder127
+    3300134: car1_fin:pCylinder70
+    3300136: car1_fin:pCylinder71
+    3300138: car1_fin:pCylinder72
+    3300140: car1_fin:pCylinder73
+    3300142: car1_fin:pCylinder74
+    3300144: car1_fin:pCylinder75
+    3300146: car1_fin:pCylinder76
+    3300148: car1_fin:pCylinder77
+    3300150: car1_fin:pCylinder78
+    3300152: car1_fin:pCylinder79
+    3300154: car1_fin:pCylinder80
+    3300156: car1_fin:pCylinder81
+    3300158: car1_fin:pCylinder82
+    3300160: car1_fin:pCylinder83
+    3300162: car1_fin:pCylinder84
+    3300164: car1_fin:pCylinder85
+    3300166: car1_fin:pCylinder86
+    3300168: car1_fin:pCylinder87
+    3300170: car1_fin:pCylinder88
+    3300172: car1_fin:pCylinder89
+    3300174: car1_fin:pCylinder90
+    3300176: car1_fin:pCylinder91
+    3300178: car1_fin:pCylinder92
+    3300180: car1_fin:pCylinder93
+    3300182: car1_fin:pCylinder94
+    3300184: car1_fin:pCylinder95
+    3300186: car1_fin:pCylinder96
+    3300188: car1_fin:pCylinder97
+    3300190: car1_fin:pCylinder98
+    3300192: car1_fin:pCylinder99
+    3300194: car1_fin:polySurface103
+    3300196: car1_fin:polySurface104
+    3300198: car1_fin:polySurface106
+    3300200: car1_fin:polySurface109
+    3300202: car1_fin:polySurface111
+    3300204: car1_fin:polySurface232
+    3300206: car1_fin:polySurface236
+    3300208: car1_fin:polySurface237
+    3300210: car1_fin:polySurface238
+    3300212: car1_fin:polySurface239
+    3300214: car1_fin:polySurface240
+    3300216: car1_fin:polySurface245
+    3300218: car1_fin:polySurface246
+    3300220: car1_fin:polySurface247
+    3300222: car1_fin:polySurface249
+    3300224: car1_fin:polySurface250
+    3300226: car1_fin:polySurface251
+    3300228: car1_fin:polySurface252
+    3300230: car1_fin:polySurface91
+    3300232: car1_fin:polySurface99
+    3300234: car1_fin:pPipe14
+    3300236: car1_fin:pPipe15
+    3300238: car1_fin:pPipe16
+    3300240: car1_fin:pPipe17
+    3300242: car1_fin:pPipe18
+    3300244: car1_fin:pPipe19
+    3300246: car1_fin:pPipe20
+    3300248: car1_fin:pPipe21
+    3300250: car1_fin:pPlane30
+    3300252: car1_fin:pPlane31
+    3300254: car1_fin:pPlane32
+    3300256: car1_fin:pPlane34
+    3300258: car1_fin:pPlane35
+    3300260: polySurface1
+    3300262: polySurface10
+    3300264: polySurface11
+    3300266: polySurface12
+    3300268: polySurface13
+    3300270: polySurface3
+    3300272: polySurface4
+    3300274: polySurface5
+    3300276: polySurface6
+    3300278: polySurface7
+    3300280: polySurface8
+    3300282: polySurface9
+    4300000: Driver_Mesh
+    4300002: car1_fin:pCube58
+    4300004: car1_fin:polySurface251
+    4300006: car1_fin:polySurface252
+    4300008: car1_fin:pPipe21
+    4300010: car1_fin:pPipe20
+    4300012: car1_fin:pPipe19
+    4300014: car1_fin:pPipe18
+    4300016: car1_fin:pCube67
+    4300018: car1_fin:pCube66
+    4300020: car1_fin:pCube65
+    4300022: car1_fin:pCube64
+    4300024: polySurface6
+    4300026: polySurface7
+    4300028: car1_fin:pPlane35
+    4300030: car1_fin:pPlane34
+    4300032: car1_fin:polySurface91
+    4300034: car1_fin:polySurface99
+    4300036: car1_fin:polySurface104
+    4300038: car1_fin:pPipe17
+    4300040: car1_fin:pCylinder105
+    4300042: car1_fin:pCylinder104
+    4300044: car1_fin:pCylinder103
+    4300046: car1_fin:pCylinder102
+    4300048: car1_fin:pCylinder101
+    4300050: car1_fin:pCylinder100
+    4300052: car1_fin:pCylinder99
+    4300054: car1_fin:pCylinder98
+    4300056: car1_fin:pCylinder97
+    4300058: car1_fin:pPipe16
+    4300060: car1_fin:pCylinder96
+    4300062: car1_fin:pCylinder95
+    4300064: car1_fin:pCylinder94
+    4300066: car1_fin:pCylinder93
+    4300068: car1_fin:pCylinder92
+    4300070: car1_fin:pCylinder91
+    4300072: car1_fin:pCylinder90
+    4300074: car1_fin:pCylinder89
+    4300076: car1_fin:pCylinder88
+    4300078: car1_fin:pPipe15
+    4300080: car1_fin:pCylinder87
+    4300082: car1_fin:pCylinder86
+    4300084: car1_fin:pCylinder85
+    4300086: car1_fin:pCylinder84
+    4300088: car1_fin:pCylinder83
+    4300090: car1_fin:pCylinder82
+    4300092: car1_fin:pCylinder81
+    4300094: car1_fin:pCylinder80
+    4300096: car1_fin:pCylinder79
+    4300098: car1_fin:pPipe14
+    4300100: car1_fin:pCylinder78
+    4300102: car1_fin:pCylinder77
+    4300104: car1_fin:pCylinder76
+    4300106: car1_fin:pCylinder75
+    4300108: car1_fin:pCylinder74
+    4300110: car1_fin:pCylinder73
+    4300112: car1_fin:pCylinder72
+    4300114: car1_fin:pCylinder71
+    4300116: car1_fin:pCylinder70
+    4300118: car1_fin:car1_wing_pPlane8
+    4300120: car1_fin:pCube62
+    4300122: car1_fin:pPlane32
+    4300124: car1_fin:pPlane31
+    4300126: car1_fin:pPlane30
+    4300128: car1_fin:pCube59
+    4300130: car1_fin:polySurface111
+    4300132: car1_fin:polySurface103
+    4300134: car1_fin:pCube70
+    4300136: car1_fin:polySurface249
+    4300138: car1_fin:polySurface250
+    4300140: car1_fin:polySurface106
+    4300142: car1_fin:polySurface109
+    4300144: polySurface8
+    4300146: polySurface9
+    4300148: polySurface4
+    4300150: polySurface5
+    4300152: car1_fin:polySurface236
+    4300154: car1_fin:polySurface238
+    4300156: car1_fin:pCube205
+    4300158: car1_fin:polySurface232
+    4300160: car1_fin:pCube214
+    4300162: car1_fin:pCube215
+    4300164: car1_fin:pCube217
+    4300166: car1_fin:pCube218
+    4300168: car1_fin:pCube219
+    4300170: car1_fin:pCube220
+    4300172: car1_fin:pCube221
+    4300174: car1_fin:pCube222
+    4300176: car1_fin:pCube223
+    4300178: car1_fin:pCube224
+    4300180: car1_fin:pCube225
+    4300182: car1_fin:pCube226
+    4300184: car1_fin:pCube227
+    4300186: car1_fin:pCube228
+    4300188: car1_fin:pCube229
+    4300190: car1_fin:pCube230
+    4300192: car1_fin:pCube250
+    4300194: car1_fin:pCube251
+    4300196: car1_fin:pCube252
+    4300198: car1_fin:pCube253
+    4300200: car1_fin:pCube254
+    4300202: car1_fin:pCube255
+    4300204: car1_fin:pCube256
+    4300206: car1_fin:pCube257
+    4300208: car1_fin:pCube258
+    4300210: car1_fin:pCube259
+    4300212: car1_fin:pCube260
+    4300214: car1_fin:pCube267
+    4300216: car1_fin:pCube268
+    4300218: car1_fin:pCube269
+    4300220: car1_fin:pCylinder118
+    4300222: car1_fin:pCube272
+    4300224: car1_fin:pCube274
+    4300226: car1_fin:pCube275
+    4300228: car1_fin:pCylinder119
+    4300230: car1_fin:pCylinder120
+    4300232: car1_fin:pCylinder121
+    4300234: car1_fin:pCylinder122
+    4300236: car1_fin:pCylinder123
+    4300238: car1_fin:pCube276
+    4300240: car1_fin:pCube277
+    4300242: car1_fin:polySurface237
+    4300244: car1_fin:pCube278
+    4300246: car1_fin:pCube279
+    4300248: car1_fin:polySurface239
+    4300250: car1_fin:polySurface240
+    4300252: polySurface12
+    4300254: polySurface13
+    4300256: polySurface10
+    4300258: polySurface11
+    4300260: car1_fin:pCylinder125
+    4300262: car1_fin:pCylinder126
+    4300264: car1_fin:pCylinder127
+    4300266: car1_fin:polySurface245
+    4300268: car1_fin:polySurface246
+    4300270: car1_fin:polySurface247
+    4300272: car1_fin:pCube280
+    4300274: car1_fin:pCube281
+    4300276: car1_fin:pCube282
+    4300278: car1_fin:pCube283
+    4300280: polySurface3
+    4300282: car1_fin:pCube285
+    4300284: polySurface1
+    7400000: right
+    7400002: left
+    7400004: default
+    9500000: //RootNode
+    13700000: Driver_Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: right
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: car1_fin:back
+        weight: 1
+      - path: car1_fin:car
+        weight: 1
+      - path: car1_fin:car/car1_fin:car1_wing_pPlane8
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube58
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube59
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube62
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube64
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube65
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube66
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube67
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube70
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube205
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube214
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube215
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube217
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube218
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube219
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube220
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube221
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube222
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube223
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube224
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube225
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube226
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube227
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube228
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube229
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube230
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube250
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube251
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube252
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube253
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube254
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube255
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube256
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube257
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube258
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube259
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube260
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube267
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube268
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube269
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube271
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube271/polySurface3
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube271/transform1
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube272
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube274
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube275
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube276
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube277
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube278
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube279
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube280
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube281
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube282
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube283
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube285
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder70
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder71
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder72
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder73
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder74
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder75
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder76
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder77
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder78
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder79
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder80
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder81
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder82
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder83
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder84
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder85
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder86
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder87
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder88
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder89
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder90
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder91
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder92
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder93
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder94
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder95
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder96
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder97
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder98
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder99
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder100
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder101
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder102
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder103
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder104
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder105
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder118
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder119
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder120
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder121
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder122
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder123
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder125
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder126
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder127
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface91
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97/car1_fin:polySurface251
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97/car1_fin:polySurface252
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97/car1_fin:transform2
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface99
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface103
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface104
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105/car1_fin:polySurface249
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105/car1_fin:polySurface250
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105/car1_fin:transform1
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface106
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface109
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface111
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226/polySurface4
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226/polySurface5
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226/transform2
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface232
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface236
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface237
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface238
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface239
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface240
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242/polySurface10
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242/polySurface11
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242/transform5
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244/polySurface12
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244/polySurface13
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244/transform6
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface245
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface246
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface247
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe14
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe15
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe16
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe17
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe18
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe19
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe20
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe21
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane30
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane31
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane32
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane34
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane35
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37/polySurface6
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37/polySurface7
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37/transform3
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39/polySurface8
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39/polySurface9
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39/transform4
+        weight: 1
+      - path: car1_fin:car/car1_fin:pTorus5
+        weight: 1
+      - path: car1_fin:left
+        weight: 1
+      - path: Driver_Mesh
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/joint1
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28/joint29
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28/joint29/joint30/joint31
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16/joint17
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16/joint17/joint18
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21/joint22/joint23
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21/joint22/joint23/joint24
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: left
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: car1_fin:back
+        weight: 1
+      - path: car1_fin:car
+        weight: 1
+      - path: car1_fin:car/car1_fin:car1_wing_pPlane8
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube58
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube59
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube62
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube64
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube65
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube66
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube67
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube70
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube205
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube214
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube215
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube217
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube218
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube219
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube220
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube221
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube222
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube223
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube224
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube225
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube226
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube227
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube228
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube229
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube230
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube250
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube251
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube252
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube253
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube254
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube255
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube256
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube257
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube258
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube259
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube260
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube267
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube268
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube269
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube271
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube271/polySurface3
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube271/transform1
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube272
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube274
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube275
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube276
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube277
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube278
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube279
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube280
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube281
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube282
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube283
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube285
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder70
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder71
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder72
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder73
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder74
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder75
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder76
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder77
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder78
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder79
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder80
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder81
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder82
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder83
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder84
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder85
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder86
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder87
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder88
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder89
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder90
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder91
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder92
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder93
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder94
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder95
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder96
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder97
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder98
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder99
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder100
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder101
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder102
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder103
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder104
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder105
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder118
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder119
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder120
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder121
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder122
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder123
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder125
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder126
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder127
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface91
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97/car1_fin:polySurface251
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97/car1_fin:polySurface252
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97/car1_fin:transform2
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface99
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface103
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface104
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105/car1_fin:polySurface249
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105/car1_fin:polySurface250
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105/car1_fin:transform1
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface106
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface109
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface111
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226/polySurface4
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226/polySurface5
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226/transform2
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface232
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface236
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface237
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface238
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface239
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface240
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242/polySurface10
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242/polySurface11
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242/transform5
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244/polySurface12
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244/polySurface13
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244/transform6
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface245
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface246
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface247
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe14
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe15
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe16
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe17
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe18
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe19
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe20
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe21
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane30
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane31
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane32
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane34
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane35
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37/polySurface6
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37/polySurface7
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37/transform3
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39/polySurface8
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39/polySurface9
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39/transform4
+        weight: 1
+      - path: car1_fin:car/car1_fin:pTorus5
+        weight: 1
+      - path: car1_fin:left
+        weight: 1
+      - path: Driver_Mesh
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/joint1
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28/joint29
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28/joint29/joint30/joint31
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16/joint17
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16/joint17/joint18
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21/joint22/joint23
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21/joint22/joint23/joint24
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: default
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: car1_fin:back
+        weight: 1
+      - path: car1_fin:car
+        weight: 1
+      - path: car1_fin:car/car1_fin:car1_wing_pPlane8
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube58
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube59
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube62
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube64
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube65
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube66
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube67
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube70
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube205
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube214
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube215
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube217
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube218
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube219
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube220
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube221
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube222
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube223
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube224
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube225
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube226
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube227
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube228
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube229
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube230
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube250
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube251
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube252
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube253
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube254
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube255
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube256
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube257
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube258
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube259
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube260
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube267
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube268
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube269
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube271
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube271/polySurface3
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube271/transform1
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube272
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube274
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube275
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube276
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube277
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube278
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube279
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube280
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube281
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube282
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube283
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCube285
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder70
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder71
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder72
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder73
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder74
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder75
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder76
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder77
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder78
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder79
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder80
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder81
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder82
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder83
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder84
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder85
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder86
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder87
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder88
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder89
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder90
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder91
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder92
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder93
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder94
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder95
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder96
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder97
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder98
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder99
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder100
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder101
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder102
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder103
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder104
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder105
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder118
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder119
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder120
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder121
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder122
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder123
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder125
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder126
+        weight: 1
+      - path: car1_fin:car/car1_fin:pCylinder127
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface91
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97/car1_fin:polySurface251
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97/car1_fin:polySurface252
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface97/car1_fin:transform2
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface99
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface103
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface104
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105/car1_fin:polySurface249
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105/car1_fin:polySurface250
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface105/car1_fin:transform1
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface106
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface109
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface111
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226/polySurface4
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226/polySurface5
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface226/transform2
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface232
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface236
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface237
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface238
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface239
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface240
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242/polySurface10
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242/polySurface11
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface242/transform5
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244/polySurface12
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244/polySurface13
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface244/transform6
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface245
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface246
+        weight: 1
+      - path: car1_fin:car/car1_fin:polySurface247
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe14
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe15
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe16
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe17
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe18
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe19
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe20
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPipe21
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane30
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane31
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane32
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane34
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane35
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37/polySurface6
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37/polySurface7
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane37/transform3
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39/polySurface8
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39/polySurface9
+        weight: 1
+      - path: car1_fin:car/car1_fin:pPlane39/transform4
+        weight: 1
+      - path: car1_fin:car/car1_fin:pTorus5
+        weight: 1
+      - path: car1_fin:left
+        weight: 1
+      - path: Driver_Mesh
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/joint1
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint6/joint7
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11/joint12
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11/joint12/joint13
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint8/joint9/joint10/joint11/joint12/joint13/joint14
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28/joint29
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28/joint29/joint30
+        weight: 1
+      - path: nurbsCircle1/joint1/joint2/joint3/joint4/joint5/joint25/joint26/joint27/joint28/joint29/joint30/joint31
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16/joint17
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16/joint17/joint18
+        weight: 1
+      - path: nurbsCircle1/joint1/joint15/joint16/joint17/joint18/joint19
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21/joint22
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21/joint22/joint23
+        weight: 1
+      - path: nurbsCircle1/joint1/joint20/joint21/joint22/joint23/joint24
+        weight: 1
+      - path: polySurface1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
