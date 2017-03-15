@@ -1091,7 +1091,7 @@ ModelImporter:
       name: Right
       takeName: Take 002
       firstFrame: 1
-      lastFrame: 25
+      lastFrame: 10
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1273,7 +1273,7 @@ ModelImporter:
       name: Left
       takeName: Take 002
       firstFrame: 60
-      lastFrame: 85
+      lastFrame: 70
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
