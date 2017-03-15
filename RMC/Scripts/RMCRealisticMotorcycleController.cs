@@ -99,6 +99,8 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 
 	void Start (){
+		GameStaticData.PlayMode = GameStaticData.GameMode.MotoX;
+
 
 		SoundsInitialize();
 		if(WheelSlipPrefab)
@@ -170,9 +172,9 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	
 	void FixedUpdate (){
 
-		if (GameStaticData.isStart) {
+
 			Inputs ();
-		}
+
 		Engine();
 		Braking();
 		ShiftGears();
@@ -192,24 +194,46 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	}
 
 	void InputAddSpeed(){
+		//   For Test
 		if (Input.GetKeyDown (KeyCode.N)) {
-			AddSpeedSec++;
+			switch (GameStaticData.PlayMode) {
+			case GameStaticData.GameMode.GP: 
+				AddSpeedSec++;
+				break;
+			case GameStaticData.GameMode.MotoX:
+				AddSpeedSec++;
+				break;
+			}
 		}
-		if(Input.GetKeyDown(KeyCode.B)){
-			if (AddSpeedSec > 0) {
-				AddSpeedSec--;
-				if(Effect == null)
-					Effect = GameObject.FindWithTag ("UIUI").transform.FindChild("Speed").GetChild(0).FindChild("BoostEffect").gameObject;
 
-				Speeding = true;
-				motionblur.enabled = true;
-				motionblur.blurAmount = 0.75f;
-				Effect.SetActive(true);
-				EndAddSpeedSec++;
+		//上面For Test
+		if(Input.GetKeyDown(KeyCode.B)){
+
+			switch (GameStaticData.PlayMode) {
+			case GameStaticData.GameMode.GP: 
+				if (AddSpeedSec > 0) {
+					AddSpeedSec--;
+					if(Effect == null)
+						Effect = GameObject.FindWithTag ("UIUI").transform.FindChild("Speed").GetChild(0).FindChild("BoostEffect").gameObject;
+
+					Speeding = true;
+					motionblur.enabled = true;
+					motionblur.blurAmount = 0.75f;
+					Effect.SetActive(true);
+					EndAddSpeedSec++;
+				}
+
+				AddSpeed ();
+
+				break;
+			case GameStaticData.GameMode.MotoX:
+					
+				Anim.SetInteger ("Stunt", (int)AddSpeedSec);
+				AddSpeedSec = 0;
+				break;
 			}
 
 		}
-		AddSpeed ();
 	}
 	void AddSpeed(){
 		
@@ -279,7 +303,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 			
 			}
 		}
-		GameStaticData.PlayMode = GameStaticData.GameMode.GP;
+
 
 		switch(GameStaticData.PlayMode){
 		case GameStaticData.GameMode.GP:
@@ -287,6 +311,8 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 			Anim.SetFloat ("Speed", Speed);
 			break;
 		case GameStaticData.GameMode.MotoX:
+			Anim.SetFloat ("ControlLR", steerInput);
+
 			break;
 		}
 
