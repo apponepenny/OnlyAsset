@@ -367,18 +367,18 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		}
 		
 	}
-
+	public bool isBrake = false;
 	public void Braking (){
 			
-		int test;
+
 		if (Input.GetKey (KeyCode.Space)) {
-			test = 1;
+			isBrake = true;
 			print ("space");
 		} else {
-			test = 0;
+			isBrake = false;
 		}
 
-		if(test == 1){
+		if(isBrake){
 			brakingNow = true;
 			FrontWheelCollider.brakeTorque = (Brake) *0.2f;
 			RearWheelCollider.brakeTorque = (Brake);

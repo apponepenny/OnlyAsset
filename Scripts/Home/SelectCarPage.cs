@@ -51,8 +51,8 @@ public class SelectCarPage : MonoBehaviour {
 		CarDist = 20;
 		NumOfCar = 4;
 		TurnSpeed = 200;
-		TSImage = ShowCarPropertyGameObject.transform.GetChild(0).FindChild ("Speed_Text").GetChild (0).GetChild (0).GetComponent<Image>();
-		ASImage = ShowCarPropertyGameObject.transform.GetChild(0).FindChild ("Accel_Text").GetChild (0).GetChild (0).GetComponent<Image>();
+		//TSImage = ShowCarPropertyGameObject.transform.GetChild(0).FindChild ("Speed_Text").GetChild (0).GetChild (0).GetComponent<Image>();
+		//ASImage = ShowCarPropertyGameObject.transform.GetChild(0).FindChild ("Accel_Text").GetChild (0).GetChild (0).GetComponent<Image>();
 		CreateCar ();
 
 		//		print(LoadCarPropertyData.CarProperties [GameStaticData.SelectedCar].Accel);
@@ -172,6 +172,7 @@ public class SelectCarPage : MonoBehaviour {
 			a.transform.parent = GameObject.Find ("AllCar").transform;
 			a.transform.localPosition = new Vector3 (50,0,0);
 			a.transform.localRotation = Quaternion.Euler (0,0,0);
+			/*
 			a.transform.FindChild ("lock").localScale = new Vector3 (0.1f, 0.1f, 0.1f);
 
 			print ("HaveStar : " + HaveStar + " || UnlockNum "+i+" : "+GameStaticData.loadCarProperty.CarProperties[i].UnlockNum);
@@ -182,14 +183,14 @@ public class SelectCarPage : MonoBehaviour {
 				a.transform.FindChild ("lock").GetChild(0).GetComponent<TextMesh>().text = GameStaticData.loadCarProperty.CarProperties[i].UnlockNum.ToString();
 			
 			}
-
+*/
 
 		}
 
 
 		//this.transform.localPosition = new Vector3(0,-2,28);
 		camPos = this.transform.GetChild (0).localPosition;
-		camPos.x = 15.5f;
+		camPos.x = 0f;
 
 		camPos.y = 0;
 		camPos.z = 0;
