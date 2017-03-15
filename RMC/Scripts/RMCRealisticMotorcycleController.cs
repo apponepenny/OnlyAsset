@@ -230,6 +230,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 					
 				Anim.SetInteger ("Stunt", (int)AddSpeedSec);
 				AddSpeedSec = 0;
+				Anim.SetInteger ("Stunt", 0);
 				break;
 			}
 
