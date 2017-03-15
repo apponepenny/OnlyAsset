@@ -229,11 +229,15 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 			case GameStaticData.GameMode.MotoX:
 					
 				Anim.SetInteger ("Stunt", (int)AddSpeedSec);
-				AddSpeedSec = 0;
-				Anim.SetInteger ("Stunt", 0);
+
+
 				break;
 			}
 
+		}
+		if (Input.GetKeyUp (KeyCode.B)) {
+			AddSpeedSec = 0;
+			Anim.SetInteger ("Stunt", 0);
 		}
 	}
 	void AddSpeed(){
