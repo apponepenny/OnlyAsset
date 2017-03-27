@@ -113,7 +113,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		rigid.maxAngularVelocity = 2f;
 
 		defsteerAngle = SteerAngle;
-		motionblur = GameObject.Find ("GvrMain").transform.FindChild ("Stereo Render").FindChild ("PostRender").GetComponent<MotionBlur> ();
+//		motionblur = GameObject.Find ("GvrMain").transform.FindChild ("Stereo Render").FindChild ("PostRender").GetComponent<MotionBlur> ();
 
 	}
 
@@ -173,7 +173,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	void FixedUpdate (){
 
 
-			Inputs ();
+		Inputs (steerInput);
 
 		Engine();
 		Braking();
@@ -258,7 +258,20 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 	}
 
-	void Inputs (){
+	public void Left(float leftnum)
+	{
+
+		steerInput = leftnum;
+
+	}
+
+	public void reset()
+	{
+		steerInput = 0;
+
+	}
+
+	void Inputs (float inputnum){
 
 		Speed = rigid.velocity.magnitude * 3.6f;
 
@@ -292,6 +305,10 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	//	motorInput = Input.GetAxis("Vertical");
 	//	steerInput = Input.GetAxis("Horizontal");
 
+		Debug.Log (8 & 7);
+		Debug.Log (7 & 6);
+
+
 		if (!isAIControl) {
 			if (!crashed) {
 				if (!changingGear)
@@ -304,7 +321,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 				
 			} else {
 				motorInput = 0;
-				steerInput = 0;
+				//steerInput = 0;
 			
 			}
 		}
