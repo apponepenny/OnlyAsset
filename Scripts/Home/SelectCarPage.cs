@@ -238,11 +238,11 @@ public class SelectCarPage : MonoBehaviour {
 				if (i != GameStaticData.SelectedCar)
 					this.transform.GetChild (i).localPosition = Vector3.MoveTowards (this.transform.GetChild (i).localPosition, new Vector3 (50, 0, 0), Time.deltaTime * TurnSpeed);
 				else {
-					this.transform.GetChild (i).localPosition = Vector3.MoveTowards (this.transform.GetChild (i).localPosition, new Vector3 (15.5f, 0, 0), Time.deltaTime * TurnSpeed);
+					this.transform.GetChild (i).localPosition = Vector3.MoveTowards (this.transform.GetChild (i).localPosition, new Vector3 (0f, 0, 0), Time.deltaTime * TurnSpeed);
 				
 				}
 
-				if (this.transform.GetChild (GameStaticData.SelectedCar).localPosition.x == 15.5f) {
+				if (this.transform.GetChild (GameStaticData.SelectedCar).localPosition.x == 0f) {
 					TurnCar = false;
 					this.transform.GetChild(TSelectCar).gameObject.SetActive (false);
 
@@ -288,8 +288,8 @@ public class SelectCarPage : MonoBehaviour {
 				//Accel = LoadCarPropertyData.CarProperties [GameStaticData.SelectedCar].Accel;
 				TopSpeed = GameStaticData.loadCarProperty.CarProperties [GameStaticData.SelectedCar].TopSpeed;
 				Accel = GameStaticData.loadCarProperty.CarProperties [GameStaticData.SelectedCar].Accel;
-				TSImage.fillAmount = 0;
-				ASImage.fillAmount = 0;
+				//TSImage.fillAmount = 0;
+				//ASImage.fillAmount = 0;
 
 
 				for (int i = 0; i < NumOfCar; i++) {
@@ -344,8 +344,8 @@ public class SelectCarPage : MonoBehaviour {
 					//Accel = LoadCarPropertyData.CarProperties [GameStaticData.SelectedCar].Accel;
 					TopSpeed = GameStaticData.loadCarProperty.CarProperties [GameStaticData.SelectedCar].TopSpeed;
 					Accel = GameStaticData.loadCarProperty.CarProperties [GameStaticData.SelectedCar].Accel;
-					TSImage.fillAmount = 0;
-					ASImage.fillAmount = 0;
+					//TSImage.fillAmount = 0;
+					//ASImage.fillAmount = 0;
 
 					for (int i = 0; i < NumOfCar; i++) {
 						if(i != TSelectCar)

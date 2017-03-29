@@ -136,7 +136,7 @@ public class CentralScript : MonoBehaviour
 
 			_peripheralList[address] = script;
 	#if UNITY_IPHONE
-			if (name == "GP-GSensor" || name == "VR RF Racing") {
+			if (name == "VR RF Moto" ) {
 				if (GameStaticData.CheckAdress.Count > 0) {
 					for (int i = 0; i < GameStaticData.CheckAdress.Count; i++) {
 						if (address == GameStaticData.CheckAdress [i]) {

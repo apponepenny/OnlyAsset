@@ -10,7 +10,9 @@ namespace UnityStandardAssets.Vehicles.Car
 public class FinishGame : MonoBehaviour {
 	public int selectBtn;
 		public List<GetRank> Rank = new List<GetRank>();
-		public GetRank[] AllRank = new GetRank[8];
+		public List<GetRank> AllRank = new List<GetRank>();
+
+		public GetRank OneRank;
 
 	public UIControl UI;
 	int thisRoundStar = 0;
@@ -30,10 +32,11 @@ public class FinishGame : MonoBehaviour {
 		public Animator[] StarAnim = new Animator[3];
 		public Transform CarStartPoint;
 		public SpriteRenderer[] ButtonSprite = new SpriteRenderer[3];
+		public gameManagerBehaviour gameManager;
 	// Use this for initialization
 	void Start () {
 			CarStartPoint = GameObject.Find ("CarStartPoint").transform;
-
+			gameManager = GameObject.Find ("gameManager").GetComponent<gameManagerBehaviour>();
 			GameStaticData.canButton_RB = false;
 		
 
@@ -45,8 +48,8 @@ public class FinishGame : MonoBehaviour {
 		CheckRank ();
 		CheckTime ();
 			StartCoroutine(CheckStar ());
-			for (int i = 1; i < 4; i++) {
-				CarStartPoint.GetChild (i).GetChild(0).GetComponent<CarAIControl>().isStart = false;
+			for (int i = 1; i < 8; i++) {
+				CarStartPoint.GetChild (i).GetChild(0).GetComponent<RMCAI>().m_Driving = false;
 			}
 			//Destroy (GameObject.Find ("CarStartPoint").transform.GetChild (0).GetChild (0).FindChild ("Helpers").gameObject);
 
@@ -66,40 +69,58 @@ public class FinishGame : MonoBehaviour {
 			//GameObject.FindWithTag ("VRCam").GetComponent<Cam_SmoothFollow> ().distance = 13;
 			//Time.timeScale = 0;
 	}
-
+		[System.Serializable]
 		public class GetRank{
 			public int CarID;
 			public int CarRank;
 		}
 
 	void CheckRank(){
-			AllRank [0].CarID = 0;
-			AllRank [0].CarRank = CarStartPoint.GetChild (0).GetChild (0).GetComponent<player_position> ().raceposition ;
+	
 
 	
-			for (int i = 1; i < 8; i++) {
-				AllRank [i].CarID = i;
-				AllRank [i].CarRank = CarStartPoint.GetChild (i).GetChild (0).GetComponent<Computer_Script> ().raceposition ;
+
+			for (int i = 0; i < 8; i++) {
+				OneRank = new GetRank();
+				OneRank.CarID = gameManager.usedCar[i];
+				if (i != 0) {
+		
+					OneRank.CarRank = CarStartPoint.GetChild (i).GetChild (0).GetComponent<Computer_Script> ().raceposition;
+
+				} else {
+
+					OneRank.CarRank = CarStartPoint.GetChild (i).GetChild (0).GetComponent<player_position> ().raceposition ;
+
+				}
+
+				AllRank.Add (OneRank);
 
 			}
-
 			for (int i = 0; i < 4; i++) {
 				for (int k = 0; k < 8; k++) {
-					if (AllRank [k].CarRank == i + 1) {
-						Rank.Add(AllRank[k]);
+
+					if (AllRank [k].CarRank == i) {
+						Rank.Add (AllRank [k]);
+						if (AllRank [k].CarID == 0) {
+							saveRankI = k;
+						}
 					}
 					if (Rank.Count >= 4) {
 						i = 4;
-						break;
+	
+				
 					}
 				}
 			}
-	
 
 
+		
 
 
-
+			for (int i = 0; i < 4; i++) {
+				
+				this.transform.FindChild ("Rank").GetChild (i).GetChild (0).GetChild (0).GetComponent<Text> ().text = Rank [i].ToString();
+			}
 
 
 
@@ -171,7 +192,12 @@ public class FinishGame : MonoBehaviour {
 	}
 
 		IEnumerator CheckStar(){
-
+			for (int i = 0; i < 4; i++) {
+				if (Rank [i].CarID == gameManager.usedCar [0]) {
+					thisRoundStar = 3 - i;
+					break;
+				}
+			}
 
 		//Dictionary<string,int> BestStar = PlayerPrefsUtility.LoadDict<string,int> ("TrackStar");
 		//string TempPos = UI.transform.FindChild ("saveRank").GetChild (0).GetComponent<TextMesh> ().text;

@@ -93,7 +93,16 @@ public class SelectTrack : MonoBehaviour {
 					GameStaticData.canButton_RB = false;
 
 					GameStaticData.SelectedTrack = selectNum;
-					GameStaticData.sceneName = (GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1);
+					switch (GameStaticData.PlayMode) {
+					case GameStaticData.GameMode.GP:
+						GameStaticData.sceneName = (GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1);
+
+						break;
+					case GameStaticData.GameMode.MotoX:
+						GameStaticData.sceneName = (GameStaticData.SelectedMap + 5) + "_" + (GameStaticData.SelectedTrack + 1);
+
+						break;
+					}
 					//GameStaticData.sceneName = "5_1";
 
 					GameObject hi = Instantiate (ScreenLoad, Vector3.zero, Quaternion.identity) as GameObject;
@@ -122,7 +131,16 @@ public class SelectTrack : MonoBehaviour {
 					GameObject Con_Page = Instantiate (ControlPage);
 
 					GameStaticData.SelectedTrack = selectNum;
-					GameStaticData.sceneName = (GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1);
+					switch (GameStaticData.PlayMode) {
+					case GameStaticData.GameMode.GP:
+						GameStaticData.sceneName = (GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1);
+
+						break;
+					case GameStaticData.GameMode.MotoX:
+						GameStaticData.sceneName = (GameStaticData.SelectedMap + 5) + "_" + (GameStaticData.SelectedTrack + 1);
+
+						break;
+					}
 					GameStaticData.PlayLap = GameStaticData.loadTrackData.TrackDatas [(4 * GameStaticData.SelectedMap) + GameStaticData.SelectedTrack].Lap;
 
 					this.transform.parent.gameObject.SetActive (false);

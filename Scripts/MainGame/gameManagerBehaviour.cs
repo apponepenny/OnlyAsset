@@ -61,7 +61,7 @@ namespace UnityStandardAssets.Vehicles.Car
 		public AudioClip AccelClip;
 		public AudioClip TopAccelClip;
 		public int AINum;
-		int[] usedCar = new int[8];
+		public int[] usedCar = new int[8];
 		public float SpeedValue {
 			get { return speedValue; }
 			set {
@@ -98,7 +98,7 @@ namespace UnityStandardAssets.Vehicles.Car
 			isStop = false;
 			GameStaticData.isstop = false;
 
-			Car_Topspeed = GameStaticData.loadCarProperty.CarProperties [GameStaticData.PlayerUsedCar].TopSpeed;
+			Car_Topspeed = GameStaticData.loadCarProperty.CarProperties [GameStaticData.PlayerUsedCar].TopSpeed/3;
 
 			StartCoroutine (CreateCar ());
 
@@ -413,14 +413,14 @@ namespace UnityStandardAssets.Vehicles.Car
 		int randNum;
 		IEnumerator CreateCar(){
 			//Create Player Car
-
+			usedCar = new int[8];
 			 PlayerCar = Instantiate (PlayCar[GameStaticData.PlayerUsedCar])as GameObject;
 
 			PlayerCar.GetComponent<makeMapObject> ().identity = GameStaticData.PlayerUsedCar;
 			PlayerCar.transform.parent = startPoint.transform.FindChild ("1");
 			PlayerCar.transform.localPosition = new Vector3 (0,0,0);
 			PlayerCar.transform.localRotation = Quaternion.Euler (0,0,0);
-			PlayerCar.transform.localScale = new Vector3 (1, 1, 1);
+			PlayerCar.transform.localScale = new Vector3 (0.7f, 0.7f, 0.7f);
 			PlayerCar.AddComponent<player_position> ();
 
 			PlayerPos = PlayerCar.GetComponent<player_position> ();
@@ -434,7 +434,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
 			Player = PlayerCar.transform;
 			Control = PlayerCar.GetComponent<RMCRealisticMotorcycleController> ();
-
+		
 			for (int O = 0; O < 8; O++) {
 				usedCar [O] = 99;
 
@@ -450,7 +450,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
 				while (isEq) {
 					randNum = Random.Range(0,8);
-					print ("randNum : "+ randNum);
+				
 					for (int O = 0; O < 8; O++) {
 					
 						if (randNum == usedCar [O]) {
@@ -465,13 +465,13 @@ namespace UnityStandardAssets.Vehicles.Car
 				}
 
 				usedCar [1 + i] = randNum;
-
+				print ("randNum : "+ randNum);
 				GameObject AICar = Instantiate (PlayCar[randNum])as GameObject;
 
 				AICar.transform.parent = startPoint.transform.FindChild ((i+2).ToString());
 				AICar.transform.localPosition = new Vector3 (0,0,0);
 				AICar.transform.localRotation = Quaternion.Euler (0,0,0);
-				AICar.transform.localScale = new Vector3 (1, 1, 1);
+				AICar.transform.localScale = new Vector3 (0.7f, 0.7f, 0.7f);
 
 				AICar.GetComponent<makeMapObject> ().identity = randNum+AINum;
 
@@ -488,7 +488,7 @@ namespace UnityStandardAssets.Vehicles.Car
 				AICar.GetComponent<RMCAI> ().enabled = true;
 
 				int randSpeed ;
-
+			/*
 				if (i == 0) {
 					randSpeed = GameStaticData.loadTrackData.TrackDatas [(4 * GameStaticData.SelectedMap) + GameStaticData.SelectedTrack].EnemyTopSpeed;
 				
@@ -496,12 +496,13 @@ namespace UnityStandardAssets.Vehicles.Car
 					randSpeed = (GameStaticData.loadTrackData.TrackDatas [(4 * GameStaticData.SelectedMap) + GameStaticData.SelectedTrack].EnemyTopSpeed) - i * 8;
 
 				}
-				
-				AI_RMCControl.maxSpeed =  randSpeed;
+			*/
+				AI_RMCControl.maxSpeed =  100;
 
 				yield return new WaitForSeconds (0.02f);
 
 			}
+
 
 			Storag.playercar = PlayerCar;
 			Storag.playercarscript = PlayerCar.GetComponent<player_position>();

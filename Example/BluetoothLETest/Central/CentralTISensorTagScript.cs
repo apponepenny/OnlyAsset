@@ -114,11 +114,6 @@ public class CentralTISensorTagScript : MonoBehaviour
 
 	void OnCharacteristicNotification (string deviceAddress, string characteristicUUID, byte[] bytes)
 	{
-		GameStaticData.b = Address.text.ToString ();
-		GameStaticData.c = characteristicUUID.ToString ();
-		GameStaticData.d = _accelerometerReadWriteUUID.ToString ();
-
-
 
 
 
@@ -130,7 +125,19 @@ public class CentralTISensorTagScript : MonoBehaviour
 					//float x = CharSignedAtOffset (bytes, 10);
 					//float y = CharSignedAtOffset (bytes, 11);
 					//float z = CharSignedAtOffset (bytes, 12);
+					Contorl_Example.test = bytes [4];
+					Contorl_Example.test = (sbyte)bytes [4];
 
+					if (CharSignedAtOffset (bytes, 4) == 74) {
+						//updateLog("Left Trigger : Onclick");
+						Contorl_Example.BLE_RL = true;
+
+					} else if (CharSignedAtOffset (bytes, 4) == 138) {
+
+						Contorl_Example.BLE_RL = false;
+				
+
+					}
 
 
 					if (CharSignedAtOffset (bytes, 6) == 51) {
@@ -140,6 +147,8 @@ public class CentralTISensorTagScript : MonoBehaviour
 					} else if (CharSignedAtOffset (bytes, 6) == 85) {
 
 						Contorl_Example.BLE_LT = false;
+						GameStaticData.canButton_LT = true;
+
 					}
 
 					//Right Trigget (sbyte)data[7]
@@ -150,6 +159,7 @@ public class CentralTISensorTagScript : MonoBehaviour
 
 					} else if (CharSignedAtOffset (bytes, 7) == 102) {
 						Contorl_Example.BLE_RT = false;
+						GameStaticData.canButton_RT = true;
 					}
 
 
@@ -161,6 +171,8 @@ public class CentralTISensorTagScript : MonoBehaviour
 
 					} else if (CharSignedAtOffset (bytes, 8) == 119) {
 						Contorl_Example.BLE_RB = false;
+						GameStaticData.canButton_RB = true;
+
 					
 					}
 
@@ -172,19 +184,25 @@ public class CentralTISensorTagScript : MonoBehaviour
 
 					} else if (CharSignedAtOffset (bytes, 9) == 136) {
 						Contorl_Example.BLE_LB = false;
+						GameStaticData.canButton_LB = true;
+
 					}
 
+					float x = (sbyte)bytes [10] / 127.0f;
 					float y = (sbyte)bytes [11] / 127.0f;
-			
+					float z = (sbyte)bytes [12] / 127.0f;
 					//GameObject.Find ("Canvas").transform.FindChild ("1").GetComponent<Text> ().text ="1 : "+ y.ToString();
 				
 					if ((float)y < 0) {
-						Contorl_Example.BLE_aY = -(1 + (float)y);
+						Contorl_Example.BLE_aY = (1 + (float)y);
 
 					} else {
 						Contorl_Example.BLE_aY = (float)y;
 					
 					}
+					Contorl_Example.BLE_aX = Mathf.Clamp((float)x,0,1);
+					Contorl_Example.BLE_aZ = (float)z;
+
 
 					//	GameObject.Find ("Canvas").transform.FindChild ("2").GetComponent<Text> ().text = Contorl_Example.BLE_aY.ToString();
 					if (GameStaticData.canMotor) {

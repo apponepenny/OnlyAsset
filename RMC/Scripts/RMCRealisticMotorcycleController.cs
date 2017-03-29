@@ -15,7 +15,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	public Transform Fender;
 	public Transform SteeringHandlebar; 
 	public Transform COM;
-	
+	public int CarID;
 
 	//Gearbox
 	public bool changingGear = false;
@@ -99,8 +99,9 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 
 	void Start (){
-		GameStaticData.PlayMode = GameStaticData.GameMode.MotoX;
 
+
+		print ("hi");
 
 		SoundsInitialize();
 		if(WheelSlipPrefab)
@@ -137,7 +138,6 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 			Destroy(audioSource, audioClip.length);
 		
 		return audioSource.GetComponent<AudioSource>();
-		
 	}
 
 	public void SoundsInitialize (){
@@ -146,6 +146,12 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		skidAudio = CreateAudioSource("skidSound", 5, 0, skidClip, true, true, false);
 		engineStartAudio = CreateAudioSource("engineStartSound", 5, .7f, engineStartClip, false, true, true);
 		
+	}
+
+	bool GetFlag(int num)
+	{
+		if (num < 1) return false;
+		return (num & num - 1) == 0;
 	}
 
 	public void SmokeInit (){
@@ -195,66 +201,73 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 	void InputAddSpeed(){
 		//   For Test
-		if (Input.GetKeyDown (KeyCode.N)) {
-			switch (GameStaticData.PlayMode) {
-			case GameStaticData.GameMode.GP: 
-				AddSpeedSec++;
-				break;
-			case GameStaticData.GameMode.MotoX:
-				AddSpeedSec++;
-				break;
+		if (transform.parent.name == "1") {
+			if (Input.GetKeyDown (KeyCode.N)) {
+				switch (GameStaticData.PlayMode) {
+				case GameStaticData.GameMode.GP: 
+					AddSpeedSec++;
+					break;
+				case GameStaticData.GameMode.MotoX:
+					AddSpeedSec++;
+					break;
+				}
 			}
-		}
 
-		//上面For Test
-		if(Input.GetKeyDown(KeyCode.B)){
+			//上面For Test
+			if (Input.GetKeyDown (KeyCode.B) || (Contorl_Example.BLE_RB && GameStaticData.canButton_RB)) {
+				GameStaticData.canButton_RB = false;
+				switch (GameStaticData.PlayMode) {
+				case GameStaticData.GameMode.GP: 
+					if (AddSpeedSec > 0) {
+						AddSpeedSec--;
+						if (Effect == null)
+							Effect = GameObject.FindWithTag ("UIUI").transform.FindChild ("Speed").GetChild (0).FindChild ("BoostEffect").gameObject;
 
-			switch (GameStaticData.PlayMode) {
-			case GameStaticData.GameMode.GP: 
-				if (AddSpeedSec > 0) {
-					AddSpeedSec--;
-					if(Effect == null)
-						Effect = GameObject.FindWithTag ("UIUI").transform.FindChild("Speed").GetChild(0).FindChild("BoostEffect").gameObject;
+						Speeding = true;
+						motionblur.enabled = true;
+						motionblur.blurAmount = 0.75f;
+						Effect.SetActive (true);
+						EndAddSpeedSec++;
+					}
 
-					Speeding = true;
-					motionblur.enabled = true;
-					motionblur.blurAmount = 0.75f;
-					Effect.SetActive(true);
-					EndAddSpeedSec++;
+
+
+					break;
+				case GameStaticData.GameMode.MotoX:
+					
+					Anim.SetInteger ("Stunt", (int)AddSpeedSec);
+
+
+					break;
 				}
 
-				AddSpeed ();
-
-				break;
-			case GameStaticData.GameMode.MotoX:
-					
-				Anim.SetInteger ("Stunt", (int)AddSpeedSec);
-
-
-				break;
 			}
-
-		}
-		if (Input.GetKeyUp (KeyCode.B)) {
-			AddSpeedSec = 0;
-			Anim.SetInteger ("Stunt", 0);
+			if (Input.GetKeyUp (KeyCode.B)) {
+				AddSpeedSec = 0;
+				Anim.SetInteger ("Stunt", 0);
+			}
+			AddSpeed ();
 		}
 	}
 	void AddSpeed(){
 		
 
-
-		if (Speeding) {
-			AddSpeedt += Time.deltaTime;
-			if (AddSpeedt >= EndAddSpeedSec) {
-				motionblur.enabled = false;
-				Effect.SetActive(false);
-				Speeding = false;
-				AddSpeedt = 0;
-				EndAddSpeedSec = 0;
+		switch (GameStaticData.PlayMode) {
+		case GameStaticData.GameMode.GP: 
+			if (Speeding) {
+				AddSpeedt += Time.deltaTime;
+				if (AddSpeedt >= EndAddSpeedSec) {
+					motionblur.enabled = false;
+					Effect.SetActive (false);
+					Speeding = false;
+					AddSpeedt = 0;
+					EndAddSpeedSec = 0;
+				}
 			}
+			break;
+		case GameStaticData.GameMode.MotoX:
+			break;
 		}
-	
 
 	}
 
@@ -273,7 +286,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 
 				transform.localEulerAngles = new Vector3 (transform.localEulerAngles.x, transform.localEulerAngles.y, Mathf.Lerp (tempZ, 0, Time.deltaTime * 20));
-			}else if (tempZ < 0) {   
+			} else if (tempZ < 0) {   
 
 				tempZ = 360 + tempZ;
 				transform.localEulerAngles = new Vector3 (transform.localEulerAngles.x, transform.localEulerAngles.y, Mathf.Lerp (tempZ, 360, Time.deltaTime * 20));
@@ -287,20 +300,42 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 			//transform.eulerAngles = new Vector3 (transform.eulerAngles.x, transform.eulerAngles.y, 0);
 
 
+		} else {
+			if (Input.GetKey (KeyCode.Q)) {
+				this.transform.Rotate (-3, 0, 0);
+			}
+			if (Input.GetKey (KeyCode.E)) {
+				this.transform.Rotate (3, 0, 0);
+			}
+
 		}
+
+
+
+	
+
+	
+
 		//If crashed...
 	//	motorInput = Input.GetAxis("Vertical");
 	//	steerInput = Input.GetAxis("Horizontal");
 
 		if (!isAIControl) {
 			if (!crashed) {
-				if (!changingGear)
+				if (!changingGear) {
 					motorInput = Input.GetAxis ("Vertical");
-				else
-					motorInput = Mathf.Clamp (Input.GetAxis ("Vertical"), -1, 0);
-				
+					/*
+					if (Contorl_Example.BLE_RB) {
+						motorInput = 1;
+					} else {
+						motorInput = 0;
+					}
+					*/
+				} else {
+					//motorInput = Mathf.Clamp (Input.GetAxis ("Vertical"), -1, 0);
+				}
 				steerInput = Mathf.Lerp(steerInput,Input.GetAxis ("Horizontal"),Time.deltaTime*10);
-
+				//steerInput = Contorl_Example.BLE_aY;
 				
 			} else {
 				motorInput = 0;
@@ -328,9 +363,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		else
 			reversing = false;
 
-		if (Input.GetKey (KeyCode.Q)) {
-			this.transform.Rotate (-3, 0, 0);
-		}
+	
 
 	}
 
