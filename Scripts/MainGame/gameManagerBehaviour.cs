@@ -97,8 +97,14 @@ namespace UnityStandardAssets.Vehicles.Car
 			finish = true;
 			isStop = false;
 			GameStaticData.isstop = false;
-
-			Car_Topspeed = GameStaticData.loadCarProperty.CarProperties [GameStaticData.PlayerUsedCar].TopSpeed/3;
+			switch (GameStaticData.PlayMode) {
+			case GameStaticData.GameMode.GP:
+				Car_Topspeed = GameStaticData.loadCarProperty.CarProperties [GameStaticData.PlayerUsedCar].TopSpeed;
+				break;
+			case  GameStaticData.GameMode.MotoX:
+				Car_Topspeed = GameStaticData.loadCarProperty.CarProperties [GameStaticData.PlayerUsedCar].TopSpeed/3;
+				break;
+			}
 
 			StartCoroutine (CreateCar ());
 
@@ -238,6 +244,11 @@ namespace UnityStandardAssets.Vehicles.Car
 		}
 
 		void Update () {
+
+			if (GameStaticData.PlayMode == GameStaticData.GameMode.GP) {
+				Gvr.transform.GetChild (0).localEulerAngles = new Vector3 (290,0,10*GameStaticData.steerAngles);
+			}
+
 			//GameStaticData.checkPos = aaa;
 			ControlBoost();
 		

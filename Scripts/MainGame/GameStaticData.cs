@@ -88,7 +88,7 @@ public class GameStaticData : MonoBehaviour {
 	public static GameObject ChooseView;
 	public GameObject Line;
 	public static bool checkFly = false;
-
+	public static float steerAngles;
 
 	//MotoX
 	public static GameMode PlayMode;

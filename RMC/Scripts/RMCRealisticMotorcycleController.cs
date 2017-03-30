@@ -334,8 +334,15 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 				} else {
 					//motorInput = Mathf.Clamp (Input.GetAxis ("Vertical"), -1, 0);
 				}
-				steerInput = Mathf.Lerp(steerInput,Input.GetAxis ("Horizontal"),Time.deltaTime*10);
-				//steerInput = Contorl_Example.BLE_aY;
+				#if UNITY_EDITOR
+				GameStaticData.steerAngles = Mathf.Lerp(GameStaticData.steerAngles,Input.GetAxis ("Horizontal"),Time.deltaTime*10);
+				steerInput = GameStaticData.steerAngles;
+
+				#elif
+				GameStaticData.steerAngles = Contorl_Example.BLE_aY;
+			 
+				steerInput = GameStaticData.steerAngles;
+				#endif
 				
 			} else {
 				motorInput = 0;
