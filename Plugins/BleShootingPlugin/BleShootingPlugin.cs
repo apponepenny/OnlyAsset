@@ -87,6 +87,7 @@ public class BleShootingPlugin : MonoBehaviour {
 			Debug.Log("!!!!!!!!   onChoseToConnectDevice in unity"+temp+"   " +key);
 			_onChoseToConnectDevice(temp);
 
+
 		}
 			
 
@@ -293,7 +294,7 @@ public class BleShootingPlugin : MonoBehaviour {
 	private static int dataType=-1;
 
 
-	private static bool m_Enabled =false;
+	public static bool m_Enabled =false;
 	private static bool UserEnable =true;
 	private static string BluetoothMesaage="Search your Bluetooth !!!!";
 	private static List<string> DeviceName=new List<string>();

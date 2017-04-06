@@ -114,7 +114,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		rigid.maxAngularVelocity = 2f;
 
 		defsteerAngle = SteerAngle;
-//		motionblur = GameObject.Find ("GvrMain").transform.FindChild ("Stereo Render").FindChild ("PostRender").GetComponent<MotionBlur> ();
+		motionblur = GameObject.Find ("GvrMain").transform.FindChild ("Stereo Render").FindChild ("PostRender").GetComponent<MotionBlur> ();
 
 	}
 
@@ -202,20 +202,21 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	void InputAddSpeed(){
 		//   For Test
 		if (transform.parent.name == "1") {
-			if (Input.GetKeyDown (KeyCode.N)) {
+			if (Input.GetKeyDown (KeyCode.N) || Contorl_Example.BLE_RT && GameStaticData.canButton_RT) {
+				GameStaticData.canButton_RT = false;
 				switch (GameStaticData.PlayMode) {
 				case GameStaticData.GameMode.GP: 
 					AddSpeedSec++;
 					break;
 				case GameStaticData.GameMode.MotoX:
-					AddSpeedSec++;
+					//AddSpeedSec++;
 					break;
 				}
 			}
 
 			//上面For Test
-			if (Input.GetKeyDown (KeyCode.B) || (Contorl_Example.BLE_RB && GameStaticData.canButton_RB)) {
-				GameStaticData.canButton_RB = false;
+			if (Input.GetKeyDown (KeyCode.B) || (Contorl_Example.BLE_RL && GameStaticData.canButton_RL)) {
+				GameStaticData.canButton_RL = false;
 				switch (GameStaticData.PlayMode) {
 				case GameStaticData.GameMode.GP: 
 					if (AddSpeedSec > 0) {
@@ -235,18 +236,32 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 					break;
 				case GameStaticData.GameMode.MotoX:
 					
-					Anim.SetInteger ("Stunt", (int)AddSpeedSec);
-
+					//Anim.SetInteger ("Stunt", (int)AddSpeedSec);
+					AddSpeedSec++;
 
 					break;
 				}
 
 			}
 			if (Input.GetKeyUp (KeyCode.B)) {
-				AddSpeedSec = 0;
+			//	AddSpeedSec = 0;
 				Anim.SetInteger ("Stunt", 0);
 			}
 			AddSpeed ();
+		}
+	}
+
+	void OnTriggerEnter(Collider other){
+		if (other.CompareTag ("stuntCube")) {
+			Anim.SetInteger ("Stunt", (int)AddSpeedSec);
+
+		}
+	}
+	void OnTriggerExit(Collider other){
+		if (other.CompareTag ("stuntCube")) {
+			AddSpeedSec = 0;
+			Anim.SetInteger ("Stunt", 0);
+
 		}
 	}
 	void AddSpeed(){
@@ -283,6 +298,8 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		steerInput = 0;
 
 	}
+	bool checkRotUp = false;
+	bool checkRotDown = false;
 
 	void Inputs (float inputnum){
 
@@ -324,8 +341,25 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		}
 
 
+		if ((transform.localEulerAngles.x > 200 && transform.localEulerAngles.x < 310) || (transform.localEulerAngles.x < -50)) {
+			checkRotUp = true;
 
-	
+		}else if ((transform.localEulerAngles.x > 50 && transform.localEulerAngles.x < 200) ) {
+			checkRotDown = true;
+
+		}
+		if (checkRotUp) {
+			this.transform.Rotate (2, 0, 0);
+		}else if (checkRotDown) {
+			this.transform.Rotate (-2, 0, 0);
+		}
+
+
+		if ((transform.localEulerAngles.x > 350 && transform.localEulerAngles.x < 360) || (transform.localEulerAngles.x >-5 && transform.localEulerAngles.x < 0)) {
+			checkRotDown = false;
+			checkRotUp = false;
+		}
+
 
 	
 
@@ -333,33 +367,40 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	//	motorInput = Input.GetAxis("Vertical");
 	//	steerInput = Input.GetAxis("Horizontal");
 
-		Debug.Log (8 & 7);
-		Debug.Log (7 & 6);
-
-
 		if (!isAIControl) {
 			if (!crashed) {
+				#if UNITY_EDITOR
 				if (!changingGear) {
 					motorInput = Input.GetAxis ("Vertical");
-					/*
-					if (Contorl_Example.BLE_RB) {
-						motorInput = 1;
-					} else {
-						motorInput = 0;
-					}
-					*/
+
 				} else {
-					//motorInput = Mathf.Clamp (Input.GetAxis ("Vertical"), -1, 0);
+					motorInput = Mathf.Clamp (Input.GetAxis ("Vertical"), -1, 0);
 				}
-				#if UNITY_EDITOR
+			
 				GameStaticData.steerAngles = Mathf.Lerp(GameStaticData.steerAngles,Input.GetAxis ("Horizontal"),Time.deltaTime*10);
 				steerInput = GameStaticData.steerAngles;
+				#else
 
-				#elif
+				if (!changingGear) {
+
+
+				if (Contorl_Example.BLE_RB) {
+				motorInput = 1;
+				} else {
+				motorInput = 0;
+				}
+
+				} else {
+
+				}
+
+
+
 				GameStaticData.steerAngles = Contorl_Example.BLE_aY;
-			 
+
 				steerInput = GameStaticData.steerAngles;
 				#endif
+		
 				
 			} else {
 				motorInput = 0;
@@ -427,8 +468,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	public bool isBrake = false;
 	public void Braking (){
 			
-
-		if (Input.GetKey (KeyCode.Space)) {
+		if (Input.GetKey (KeyCode.Space) || Speed > maxSpeed || Contorl_Example.BLE_LB) {
 			isBrake = true;
 			print ("space");
 		} else {
@@ -460,7 +500,8 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 			RearWheelCollider.brakeTorque = 0;
 		}
 		*/
-		
+
+
 	}
 	bool OnGround = true;
 	void WheelAlign (){

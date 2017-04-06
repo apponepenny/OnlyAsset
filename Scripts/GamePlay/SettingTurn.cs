@@ -146,7 +146,7 @@ public class SettingTurn : MonoBehaviour {
 			case 1:
 				//restart
 				if (!GameObject.Find ("ScreenLoad(Clone)")) {
-				GameStaticData.sceneName = (GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1);
+						GameStaticData.sceneName = (GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1);
 				//GameObject.Find ("CarStartPoint").transform.GetChild (0).GetChild (0).gameObject.SetActive (false);
 			
 

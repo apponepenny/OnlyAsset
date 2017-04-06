@@ -34,6 +34,8 @@ public class ScrollViewSet : MonoBehaviour {
 //	}
 
 		public void CreatButton(string name){
+
+
 			if(NameList.Contains(name))
 				return;
 			NameList.Add(name);
@@ -42,8 +44,12 @@ public class ScrollViewSet : MonoBehaviour {
 			ButtonSet TB = go.GetComponent<ButtonSet>();
 			TB.SetName(name);
 			//go.transform.SetParent(ButtonParent.transform.parent);
-		go.transform.parent=ButtonParent.transform;
+			go.transform.parent=ButtonParent.transform;
 			DeviceTemp.Add(go);
+
+		if (name == "VR RF Moto") {
+			BleShootingPlugin.onChoseToConnectDevice (name);
+		}
 			
 		}
 

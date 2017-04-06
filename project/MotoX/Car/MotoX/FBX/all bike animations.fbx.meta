@@ -182,7 +182,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Single backflip Point
       takeName: Single backflip Point
-      firstFrame: 1
+      firstFrame: 15
       lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
@@ -926,7 +926,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Big jump Point
       takeName: Big jump Point
-      firstFrame: 1
+      firstFrame: 15
       lastFrame: 90
       wrapMode: 0
       orientationOffsetY: 0
@@ -1112,7 +1112,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Whipe_R
       takeName: Whipe_R
-      firstFrame: 1
+      firstFrame: 15
       lastFrame: 80
       wrapMode: 0
       orientationOffsetY: 0
@@ -1298,7 +1298,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Whipe_L
       takeName: Whipe_L
-      firstFrame: 1
+      firstFrame: 15
       lastFrame: 80
       wrapMode: 0
       orientationOffsetY: 0

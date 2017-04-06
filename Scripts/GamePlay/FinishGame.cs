@@ -119,7 +119,7 @@ public class FinishGame : MonoBehaviour {
 
 			for (int i = 0; i < 4; i++) {
 				
-				this.transform.FindChild ("Rank").GetChild (i).GetChild (0).GetChild (0).GetComponent<Text> ().text = Rank [i].ToString();
+				this.transform.FindChild ("Rank").GetChild (i).GetChild (0).GetChild (0).GetComponent<TextMesh> ().text = Rank [i].CarID.ToString();
 			}
 
 
@@ -171,14 +171,14 @@ public class FinishGame : MonoBehaviour {
 
 		//Dictionary<string,int> BestTime = PlayerPrefsUtility.LoadDict<string,int> ("TrackBestTime");
 
-		int Bestmm = GameStaticData.BestTime[(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1) + "mm"];
-		int Bestss = GameStaticData.BestTime[(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1) + "ss"];
-		int Bestms = GameStaticData.BestTime[(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1) + "ms"];
+			int Bestmm = GameStaticData.BestTime[(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1) + "mm"];
+			int Bestss = GameStaticData.BestTime[(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1) + "ss"];
+			int Bestms = GameStaticData.BestTime[(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1) + "ms"];
 
 		if (UI.mm < Bestmm || (UI.mm == Bestmm && UI.ss < Bestss) || (UI.mm == Bestmm && UI.ss == Bestss && UI.ms < Bestss)) {
-			GameStaticData.BestTime [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1) + "mm"] = (int)UI.mm;
-			GameStaticData.BestTime [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1) + "ss"] = (int)UI.ss;
-			GameStaticData.BestTime [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1) + "ms"] = (int)UI.ms;
+				GameStaticData.BestTime [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1) + "mm"] = (int)UI.mm;
+				GameStaticData.BestTime [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1) + "ss"] = (int)UI.ss;
+				GameStaticData.BestTime [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1) + "ms"] = (int)UI.ms;
 			PlayerPrefsUtility.SaveDict<string,int> ("TrackBestTime",GameStaticData.BestTime);
 
 		}
@@ -186,9 +186,9 @@ public class FinishGame : MonoBehaviour {
 		
 
 		this.transform.FindChild ("Result").FindChild ("BestLap_Text").GetChild (0).GetComponent<TextMesh> ().text = 
-			GameStaticData.BestTime [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1) + "mm"].ToString("00") + ":" +
-			GameStaticData.BestTime [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1) + "ss"].ToString("00") + ":" +
-			GameStaticData.BestTime [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1) + "ms"].ToString("00");
+				GameStaticData.BestTime [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1) + "mm"].ToString("00") + ":" +
+				GameStaticData.BestTime [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1) + "ss"].ToString("00") + ":" +
+				GameStaticData.BestTime [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1) + "ms"].ToString("00");
 	}
 
 		IEnumerator CheckStar(){
@@ -253,7 +253,7 @@ public class FinishGame : MonoBehaviour {
 
 			}
 */
-			unlock = GameStaticData.TrackUnlock [GameStaticData.SelectedMap.ToString()];
+			unlock = GameStaticData.TrackUnlock [(GameStaticData.SelectedMap+GameStaticData.GameAddNum).ToString()];
 
 			//unlock = PlayerPrefs.GetInt (unlockname);
 
@@ -292,8 +292,7 @@ public class FinishGame : MonoBehaviour {
 			}
 			*/
                                 //			thisRoundStar = 3 - Rank [0];
-			print ((GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1));
-			print ("this Round Star : " + thisRoundStar + " || Best Star : " + GameStaticData.BestStar [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1)]);
+		
 			/*
 			if (GameStaticData.BestStar [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1)] < thisRoundStar) {
 
@@ -309,8 +308,8 @@ public class FinishGame : MonoBehaviour {
 
 */
 			PlayerPrefs.SetInt ("HaveStar",PlayerPrefs.GetInt ("HaveStar")+thisRoundStar);
-			if (GameStaticData.BestStar [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1)] < thisRoundStar) {
-				GameStaticData.BestStar [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1)] = thisRoundStar;
+			if (GameStaticData.BestStar [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1)] < thisRoundStar) {
+				GameStaticData.BestStar [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1)] = thisRoundStar;
 				PlayerPrefsUtility.SaveDict<string,int> ("TrackStar",GameStaticData.BestStar);
 			}
 			/*
@@ -428,7 +427,7 @@ public class FinishGame : MonoBehaviour {
 
 						break;
 					case 1:
-						GameStaticData.sceneName = (GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1);
+						GameStaticData.sceneName = (GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1);
 
 						break;
 					case 2:
@@ -437,17 +436,17 @@ public class FinishGame : MonoBehaviour {
 				//	if (unlock <= GameStaticData.SelectedTrack + 1) {
 				//		GameStaticData.sceneName = "Game_Home";
 
-						if (GameStaticData.HaveStar < GameStaticData.loadTrackData.TrackDatas [(4 * GameStaticData.SelectedMap) + GameStaticData.SelectedTrack + 2].Require) {
+						if (GameStaticData.HaveStar < GameStaticData.loadTrackData.TrackDatas [(4 * (GameStaticData.SelectedMap+GameStaticData.GameAddNum)) + GameStaticData.SelectedTrack + 2].Require) {
 							GameStaticData.sceneName = "Game_Home";
 						} else {
 							GameStaticData.SelectedTrack++;
 							if (GameStaticData.SelectedTrack < GameStaticData.MaxTrack)
-								GameStaticData.sceneName = (GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1);
+								GameStaticData.sceneName = (GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1);
 							else {
 								GameStaticData.sceneName = "Game_Home";
 							}
 
-							GameStaticData.PlayLap = GameStaticData.MapTrackLap [(GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1)];
+							GameStaticData.PlayLap = GameStaticData.MapTrackLap [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1)];
 						}
 				
 

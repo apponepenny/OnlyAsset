@@ -86,9 +86,12 @@ public class CheckFirstTime : MonoBehaviour {
 		switch (GameStaticData.PlayMode) {
 		case GameStaticData.GameMode.MotoX: 
 			MotoXImage.SetActive (true);
+			GameStaticData.GameAddNum = 4;
+
 			break;
 		case GameStaticData.GameMode.GP: 
 			GPImage.SetActive (true);
+			GameStaticData.GameAddNum = 0;
 			break;
 		}
 		MotorMode.SetActive (false);

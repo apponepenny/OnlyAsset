@@ -16,7 +16,6 @@ public class Respawnpos : MonoBehaviour {
 		public CarController CarControl;
 		public Transform NormalRespawnPt;
 		public GameStaticData gameStaticData;
-		public WaypointCircuit waypointC;
 		public Transform RespawnLookPt;
 
 		public float resetTime = 0;
@@ -26,9 +25,8 @@ public class Respawnpos : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 			gameStaticData = GameObject.Find ("LoadBLE").GetComponent<GameStaticData> ();
-			waypointC = GameObject.Find ("Waypoints").GetComponent<WaypointCircuit> ();
 
-			respawnDistance = 70;
+			respawnDistance = 40;
 
 		}
 
@@ -70,7 +68,7 @@ public class Respawnpos : MonoBehaviour {
 
 			} else {
 			
-				if (cooldownRespawn > 4 && distance > 9990) {
+				if (cooldownRespawn > 4 && (distance > 40 || GetComponent<RMCRealisticMotorcycleController>().Speed <2)) {
 
 
 					print (distance);

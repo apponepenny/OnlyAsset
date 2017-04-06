@@ -81,6 +81,7 @@ namespace UnityStandardAssets.Vehicles.Car
 		Computer_Script[] Com_Script = new Computer_Script[7];
 		public AudioClip[] AllBgMusic;
 		public Image FullBoost;
+
 		// Use this for initialization
 		void Start () {
 
@@ -173,6 +174,9 @@ namespace UnityStandardAssets.Vehicles.Car
 			}
 			if (Contorl_Example.BLE_aY <= 0.5f && Contorl_Example.BLE_aY >= -0.5f) {
 				GameStaticData.canButton_aY = true;
+			}
+			if (!Contorl_Example.BLE_RL) {
+				GameStaticData.canButton_RL = true;
 			}
 		}
 		// Update is called once per frame

@@ -65,7 +65,7 @@ public class rescan : MonoBehaviour {
 					Text_Num.text = "Rescanning...";
 				}
 				if (!scaned) {
-					GameObject.Find ("BLECanvas").GetComponent<BLETestScript> ().PanelCentral.OnScan ();
+					//GameObject.Find ("BLECanvas").GetComponent<BLETestScript> ().PanelCentral.OnScan ();
 
 					scaned = true;
 				}
