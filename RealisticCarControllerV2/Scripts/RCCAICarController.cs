@@ -50,7 +50,7 @@ public class RCCAICarController : MonoBehaviour {
 	public bool ignoreWaypointNow = false;
 	
 	// Unity's Navigator.
-	private UnityEngine.AI.NavMeshAgent navigator;
+	private NavMeshAgent navigator;
 	private GameObject navigatorObject;
 
 	void Awake() {
@@ -76,12 +76,12 @@ public class RCCAICarController : MonoBehaviour {
 		navigatorObject = new GameObject("Navigator");
 		navigatorObject.transform.parent = transform;
 		navigatorObject.transform.localPosition = Vector3.zero;
-		navigatorObject.AddComponent<UnityEngine.AI.NavMeshAgent>();
-		navigatorObject.GetComponent<UnityEngine.AI.NavMeshAgent>().radius = 1;
-		navigatorObject.GetComponent<UnityEngine.AI.NavMeshAgent>().speed = 1f;
-		navigatorObject.GetComponent<UnityEngine.AI.NavMeshAgent>().height = 1;
-		navigatorObject.GetComponent<UnityEngine.AI.NavMeshAgent>().avoidancePriority = 99;
-		navigator = navigatorObject.GetComponent<UnityEngine.AI.NavMeshAgent>();
+		navigatorObject.AddComponent<NavMeshAgent>();
+		navigatorObject.GetComponent<NavMeshAgent>().radius = 1;
+		navigatorObject.GetComponent<NavMeshAgent>().speed = 1f;
+		navigatorObject.GetComponent<NavMeshAgent>().height = 1;
+		navigatorObject.GetComponent<NavMeshAgent>().avoidancePriority = 99;
+		navigator = navigatorObject.GetComponent<NavMeshAgent>();
 		
 	}
 	
