@@ -351,7 +351,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		if (checkRotUp) {
 			this.transform.Rotate (2, 0, 0);
 		}else if (checkRotDown) {
-			this.transform.Rotate (-2, 0, 0);
+			this.transform.Rotate (-3, 0, 0);
 		}
 
 
@@ -379,6 +379,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 			
 				GameStaticData.steerAngles = Mathf.Lerp(GameStaticData.steerAngles,Input.GetAxis ("Horizontal"),Time.deltaTime*10);
 				steerInput = GameStaticData.steerAngles;
+				//transform.Rotate(0,GameStaticData.steerAngles*3,0);
 				#else
 
 				if (!changingGear) {
@@ -428,7 +429,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		else
 			reversing = false;
 
-	
+
 
 	}
 
@@ -440,7 +441,8 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 		//Engine RPM.
 		EngineRPM = Mathf.Clamp((((Mathf.Abs((FrontWheelCollider.rpm + RearWheelCollider.rpm)) * gearShiftRate) + MinEngineRPM)) / (currentGear + 1), MinEngineRPM, MaxEngineRPM);
-		
+		if(transform.parent.name == "1")
+			print ("EngineRPM : "+ EngineRPM);
 		//Engine Audio Volume.
 		engineAudio.volume = Mathf.Lerp (engineAudio.volume, Mathf.Clamp (motorInput, .35f, .85f), Time.deltaTime*  5);
 		engineAudio.pitch = Mathf.Lerp ( engineAudio.pitch, Mathf.Lerp (1f, 2f, (EngineRPM - (MinEngineRPM / 1.5f)) / (MaxEngineRPM + MinEngineRPM)), Time.deltaTime * 5);
@@ -451,6 +453,8 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		// Applying Motor Torque.
 		if(Speed > maxSpeed){
 			RearWheelCollider.motorTorque = 0;
+
+
 		}else if(!reversing && !changingGear){
 			RearWheelCollider.motorTorque = EngineTorque  * Mathf.Clamp(motorInput, 0f, 1f) * engineTorqueCurve[currentGear].Evaluate(Speed);
 		}
@@ -458,9 +462,9 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 		if(reversing){
 			if(Speed < 10){
-			//	RearWheelCollider.motorTorque = (EngineTorque  * motorInput) / 5f;
+				RearWheelCollider.motorTorque = (EngineTorque  * motorInput) / 5f;
 			}else{
-			//	RearWheelCollider.motorTorque = 0;
+				RearWheelCollider.motorTorque = 0;
 			}
 		}
 		

@@ -435,7 +435,12 @@ namespace UnityStandardAssets.Vehicles.Car
 			PlayerCar.transform.parent = startPoint.transform.FindChild ("1");
 			PlayerCar.transform.localPosition = new Vector3 (0,0,0);
 			PlayerCar.transform.localRotation = Quaternion.Euler (0,0,0);
-			PlayerCar.transform.localScale = new Vector3 (0.7f, 0.7f, 0.7f);
+			if (GameStaticData.PlayMode == GameStaticData.GameMode.GP)
+				PlayerCar.transform.localScale = new Vector3 (1, 1, 1f);
+			else {
+				PlayerCar.transform.localScale = new Vector3 (0.7f,0.7f,0.7f);
+
+			}
 			PlayerCar.AddComponent<player_position> ();
 
 			PlayerPos = PlayerCar.GetComponent<player_position> ();
@@ -486,7 +491,12 @@ namespace UnityStandardAssets.Vehicles.Car
 				AICar.transform.parent = startPoint.transform.FindChild ((i+2).ToString());
 				AICar.transform.localPosition = new Vector3 (0,0,0);
 				AICar.transform.localRotation = Quaternion.Euler (0,0,0);
-				AICar.transform.localScale = new Vector3 (0.7f, 0.7f, 0.7f);
+				if (GameStaticData.PlayMode == GameStaticData.GameMode.GP)
+					AICar.transform.localScale = new Vector3 (1, 1, 1f);
+				else {
+					AICar.transform.localScale = new Vector3 (0.7f,0.7f,0.7f);
+				
+				}
 
 				AICar.GetComponent<makeMapObject> ().identity = randNum+AINum;
 
