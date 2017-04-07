@@ -352,7 +352,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		if ((transform.localEulerAngles.x > 200 && transform.localEulerAngles.x < 310) || (transform.localEulerAngles.x < -50)) {
 			checkRotUp = true;
 
-		}else if ((transform.localEulerAngles.x > 50 && transform.localEulerAngles.x < 200) ) {
+		}else if ((transform.localEulerAngles.x > 40 && transform.localEulerAngles.x < 200) ) {
 			checkRotDown = true;
 
 		}
@@ -363,7 +363,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		}
 
 
-		if ((transform.localEulerAngles.x > 350 && transform.localEulerAngles.x < 360) || (transform.localEulerAngles.x >-5 && transform.localEulerAngles.x < 0)) {
+		if ((transform.localEulerAngles.x > 350 && transform.localEulerAngles.x < 355) || (transform.localEulerAngles.x >0 && transform.localEulerAngles.x < 5)) {
 			checkRotDown = false;
 			checkRotUp = false;
 		}
@@ -446,7 +446,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	}
 
 	void Engine (){
-		
+		ControlStuntCam ();
 		//Steer Limit.
 		SteerAngle = Mathf.Lerp(defsteerAngle, highSpeedSteerAngle, (Speed / highSpeedSteerAngleAtSpeed));
 		FrontWheelCollider.steerAngle = SteerAngle * steerInput;
@@ -470,7 +470,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 			RearWheelCollider.motorTorque = EngineTorque  * Mathf.Clamp(motorInput, 0f, 1f) * engineTorqueCurve[currentGear].Evaluate(Speed);
 		}
 		if(transform.parent.name == "1")
-			print (" | RearWheelCollider : "+RearWheelCollider.rpm + " | " + OnGround.ToString());
+	
 
 		if(reversing){
 			if(Speed < 10){
@@ -481,12 +481,29 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		}
 		
 	}
+	bool onfly = false;
+
+	void ControlStuntCam(){
+		if (!OnGround) {
+			onfly = true;
+
+			if (onfly) {
+				transform.FindChild ("LookPt").localPosition = new Vector3 (transform.FindChild ("LookPt").localPosition.x, 
+					Mathf.Lerp (transform.FindChild ("LookPt").localPosition.y, 0.45f, Time.deltaTime*4),
+					transform.FindChild ("LookPt").localPosition.z);
+			}
+		} else {
+			transform.FindChild ("LookPt").localPosition = new Vector3 (transform.FindChild ("LookPt").localPosition.x, Mathf.Lerp (transform.FindChild ("LookPt").localPosition.y, 1.45f, Time.deltaTime*4), transform.FindChild ("LookPt").localPosition.z);
+			onfly = false;
+		}
+
+	}
 	public bool isBrake = false;
 	public void Braking (){
 		
-		if (Input.GetKey (KeyCode.Space) || Speed > maxSpeed || Contorl_Example.BLE_LB || !OnGround) {
+		if (Input.GetKey (KeyCode.Space)|| Contorl_Example.BLE_LB || (!OnGround && RearWheelCollider.rpm >1000)) {
 			isBrake = true;
-			print ("space");
+
 		} else {
 			isBrake = false;
 		}

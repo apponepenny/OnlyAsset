@@ -32,8 +32,7 @@ public class readygo : MonoBehaviour {
 		this.gameObject.SetActive (true);
 
 		_Text.text = MutliLang.LangString[48];
-			Cam.transform.GetChild (0).localPosition = new Vector3 (0, 0, 0);
-			Cam.transform.GetChild (0).localEulerAngles = new Vector3 (290, 0, 0);
+
 
 	
 		yield return new WaitForSeconds (1);
@@ -47,7 +46,8 @@ public class readygo : MonoBehaviour {
 		thisAudioSo.Play ();
 		thisAudioSo.volume = GameStaticData.MusicValue;
 		_Text.text = "3";
-
+			Cam.transform.GetChild (0).localPosition = new Vector3 (0, 0, 0);
+			Cam.transform.GetChild (0).localEulerAngles = new Vector3 (0, 0, 0);
 		yield return new WaitForSeconds (1);
 		_Text.text = "2";
 
