@@ -25,6 +25,8 @@ public class GameStaticData : MonoBehaviour {
 	public static bool canButton_RT = true;
 	public static bool canButton_LT = true;
 	public static bool canButton_aY = true;
+	public static bool canButton_RL = true;
+
 	public static string sceneName = "Start";
 	public static bool isContorl;
 	public static bool InReScan = false;
@@ -88,9 +90,10 @@ public class GameStaticData : MonoBehaviour {
 	public static GameObject ChooseView;
 	public GameObject Line;
 	public static bool checkFly = false;
-
+	public static float steerAngles;
 
 	//MotoX
+	public static int GameAddNum = 0;
 	public static GameMode PlayMode;
 	public enum GameMode
 	{
@@ -111,6 +114,7 @@ public class GameStaticData : MonoBehaviour {
 
 
 	IEnumerator Start(){
+		DontDestroyOnLoad (this.gameObject);
 		MidLine = Line;
 		loadTrackData.LoadDataFromXML ();
 		yield return new WaitForSeconds (0.05f);

@@ -37,8 +37,11 @@ public class RMCWheelSkidmarks : MonoBehaviour {
 				wheelSlipAmountSideways = Mathf.Abs (GroundHit.sidewaysSlip);
 				wheelSlipAmountForward = Mathf.Abs (GroundHit.forwardSlip);
 			
-				if (wheelSlipAmountSideways > startSlipValue || wheelSlipAmountForward > .5f) {
-				
+
+
+				//if (wheelSlipAmountSideways > startSlipValue || wheelSlipAmountForward > .5f) {
+				if (vehicle.isBrake) {
+
 					Vector3 skidPoint = GroundHit.point + 2f * (vehicleRigid.velocity) * Time.deltaTime;
 
 					if (vehicleRigid.velocity.magnitude > 1f)

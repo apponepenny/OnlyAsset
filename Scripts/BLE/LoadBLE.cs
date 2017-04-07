@@ -10,7 +10,7 @@ namespace UnityStandardAssets.Vehicles.Car
 {
 
 	public class LoadBLE : MonoBehaviour {
-		public BLETestScript BLETest;
+
 		public GameObject BLECanvas;
 		public GameObject ReScanBLE;
 		public Transform ui;
@@ -39,8 +39,7 @@ namespace UnityStandardAssets.Vehicles.Car
 		//	this.gameObject.name = "BLECanvas";
 		}
 		public void BLEScan(){
-			BLETest = GameObject.Find ("BLECanvas").GetComponent<BLETestScript> ();
-			BLETest.bleScan ();
+
 			StartCoroutine (ClickWait());
 
 		

@@ -50,7 +50,7 @@ public class Game_HomeSelect : MonoBehaviour {
 				GameObject.Find ("GvrMain").transform.GetChild (0).GetComponent<GvrHead> ().trackPosition = true;
 				GameObject.Find ("GvrMain").transform.GetChild (0).GetComponent<GvrHead> ().trackRotation = true;
 			}
-			GameObject.Find ("BLECanvas").GetComponent<BLETestScript> ().bleStopScan ();
+		//	GameObject.Find ("BLECanvas").GetComponent<BLETestScript> ().bleStopScan ();
 			GameStaticData.canMotor = false;
 	}
 

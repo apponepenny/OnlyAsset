@@ -857,7 +857,6 @@ public class RCCCarControllerV2 : MonoBehaviour {
 
 		if (GameStaticData.isStart) {
 			if (Contorl_Example.BLE_RB || Mathf.Abs (Input.GetAxis ("Vertical")) > .05f) {
-				if (!wpt.isFlyRes) {
 					if (speed <= 60) {
 
 						rigid.AddForce (transform.forward * 25 * AccelSpeed, ForceMode.Acceleration);
@@ -885,9 +884,7 @@ public class RCCCarControllerV2 : MonoBehaviour {
 							print ("hi");
 						}
 					}
-				} else {
-					rigid.AddForce (transform.forward * 30 * AccelSpeed, ForceMode.Acceleration);
-				}
+
 			}
 
 		}

@@ -93,7 +93,9 @@ public class SelectTrack : MonoBehaviour {
 					GameStaticData.canButton_RB = false;
 
 					GameStaticData.SelectedTrack = selectNum;
-					GameStaticData.sceneName = (GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1);
+	
+						GameStaticData.sceneName = (GameStaticData.SelectedMap + 1 + GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1);
+
 					//GameStaticData.sceneName = "5_1";
 
 					GameObject hi = Instantiate (ScreenLoad, Vector3.zero, Quaternion.identity) as GameObject;
@@ -104,7 +106,7 @@ public class SelectTrack : MonoBehaviour {
 
 
 					//GameStaticData.PlayLap = GameStaticData.MapTrackLap[(GameStaticData.SelectedMap+1)+"_"+(GameStaticData.SelectedTrack+1)];
-					GameStaticData.PlayLap = GameStaticData.loadTrackData.TrackDatas [(4 * GameStaticData.SelectedMap) + GameStaticData.SelectedTrack].Lap;
+					GameStaticData.PlayLap = GameStaticData.loadTrackData.TrackDatas [(4 * (GameStaticData.SelectedMap + GameStaticData.GameAddNum)) + GameStaticData.SelectedTrack].Lap;
 					//Destroy (this.transform.parent.gameObject);
 					this.transform.parent.gameObject.SetActive (false);
 
@@ -122,8 +124,10 @@ public class SelectTrack : MonoBehaviour {
 					GameObject Con_Page = Instantiate (ControlPage);
 
 					GameStaticData.SelectedTrack = selectNum;
-					GameStaticData.sceneName = (GameStaticData.SelectedMap + 1) + "_" + (GameStaticData.SelectedTrack + 1);
-					GameStaticData.PlayLap = GameStaticData.loadTrackData.TrackDatas [(4 * GameStaticData.SelectedMap) + GameStaticData.SelectedTrack].Lap;
+			
+					GameStaticData.sceneName = (GameStaticData.SelectedMap + 1 + GameStaticData.GameAddNum) + "_" + (GameStaticData.SelectedTrack + 1);
+
+					GameStaticData.PlayLap = GameStaticData.loadTrackData.TrackDatas [(4 * (GameStaticData.SelectedMap + GameStaticData.GameAddNum)) + GameStaticData.SelectedTrack].Lap;
 
 					this.transform.parent.gameObject.SetActive (false);
 
@@ -202,7 +206,7 @@ public class SelectTrack : MonoBehaviour {
 
         int count;
 
-        Object[] maps = Resources.LoadAll("Track/"+ GameStaticData.SelectedMap);
+		Object[] maps = Resources.LoadAll("Track/"+ GameStaticData.SelectedMap + GameStaticData.GameAddNum);
         count = maps.Length;
 
         print("How many Track : "+count);
@@ -229,7 +233,7 @@ public class SelectTrack : MonoBehaviour {
 
 			//Dictionary<string,int> LoadTrackStar = PlayerPrefsUtility.LoadDict<string,int> ("TrackStar");
 
-			for (int j = 0; j < GameStaticData.BestStar [(GameStaticData.SelectedMap+1) + "_" + (i+1)]; j++) {
+			for (int j = 0; j < GameStaticData.BestStar [(GameStaticData.SelectedMap+1+GameStaticData.GameAddNum) + "_" + (i+1)]; j++) {
 				
 				this.transform.GetChild (i).FindChild("main").FindChild ("Star").GetChild (j).GetComponent<SpriteRenderer> ().sprite = LightStar; 
 
@@ -247,9 +251,9 @@ public class SelectTrack : MonoBehaviour {
 			}
 *******************************/
 			//Dictionary<string,int> LoadTrackBestTime = PlayerPrefsUtility.LoadDict<string,int> ("TrackBestTime");
-			int mm = (int)GameStaticData.BestTime[(GameStaticData.SelectedMap + 1) + "_" + (i + 1) + "mm"];
-			int ss = (int)GameStaticData.BestTime [(GameStaticData.SelectedMap + 1) + "_" + (i + 1) + "ss"];
-			int ms = (int)GameStaticData.BestTime [(GameStaticData.SelectedMap + 1) + "_" + (i + 1) + "ms"];
+			int mm = (int)GameStaticData.BestTime[(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (i + 1) + "mm"];
+			int ss = (int)GameStaticData.BestTime [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (i + 1) + "ss"];
+			int ms = (int)GameStaticData.BestTime [(GameStaticData.SelectedMap + 1+GameStaticData.GameAddNum) + "_" + (i + 1) + "ms"];
 
 			if (mm == 99 && ss == 99 && ms == 99) {
 				this.transform.GetChild (i).FindChild("main").FindChild ("Time").GetChild (0).GetChild (0).GetComponent<TextMesh> ().text ="--:--:--";
@@ -260,7 +264,7 @@ public class SelectTrack : MonoBehaviour {
 
 		
 		
-			this.transform.GetChild (i).FindChild("main").FindChild("track").GetComponent<SpriteRenderer>().sprite = AllTrack[GameStaticData.SelectedMap].Track[i];
+			this.transform.GetChild (i).FindChild("main").FindChild("track").GetComponent<SpriteRenderer>().sprite = AllTrack[GameStaticData.SelectedMap+GameStaticData.GameAddNum].Track[i];
 			this.transform.GetChild (i).FindChild("main").FindChild("Race").GetComponent<TextMesh>().text = "LEVEL "+(i+1);
 			//this.transform.GetChild (i).FindChild ("main").FindChild ("map").GetChild (0).FindChild ("num").GetComponent<TextMesh> ().text = GameStaticData.loadTrackData.TrackDatas [(4 * GameStaticData.SelectedMap) + i].Require.ToString ();
 			this.transform.GetChild (i).FindChild ("main").FindChild ("map").GetChild (0).FindChild ("num").gameObject.SetActive(false);

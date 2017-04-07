@@ -21,6 +21,9 @@ public class CheckFirstTime : MonoBehaviour {
 	public GameObject Main;
 	public GameObject MotorMode;
 	public Image MainBGImage;
+	public GameObject GPImage;
+	public GameObject MotoXImage;
+
 
 	// Use this for initialization
 	void Start () {
@@ -82,10 +85,13 @@ public class CheckFirstTime : MonoBehaviour {
 	void CheckPlayMode(){
 		switch (GameStaticData.PlayMode) {
 		case GameStaticData.GameMode.MotoX: 
-			
+			MotoXImage.SetActive (true);
+			GameStaticData.GameAddNum = 4;
+
 			break;
 		case GameStaticData.GameMode.GP: 
-			
+			GPImage.SetActive (true);
+			GameStaticData.GameAddNum = 0;
 			break;
 		}
 		MotorMode.SetActive (false);
@@ -94,6 +100,9 @@ public class CheckFirstTime : MonoBehaviour {
 	public void BackMotorMode(){
 		MotorMode.SetActive (true);
 		Main.SetActive (false);
+		GPImage.SetActive (false);
+		MotoXImage.SetActive (false);
+
 	}
 
 

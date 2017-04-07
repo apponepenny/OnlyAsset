@@ -61,6 +61,7 @@ public class MiniMapController : MonoBehaviour {
 			//Quaternion screenRot = mo.owner.transform.rotation;
 
 			//mo.icon.transform.SetParent (this.transform);
+			if(mo.icon.transform.parent != this.transform)
 			mo.icon.transform.parent = this.transform;
 
 

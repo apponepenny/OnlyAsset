@@ -67,6 +67,11 @@ public class ControlCam : MonoBehaviour {
 	void Update () {
 
 
+		if (GameStaticData.PlayMode == GameStaticData.GameMode.GP) {
+			VRCam.transform.GetChild (0).localEulerAngles = new Vector3 (290,0,10*GameStaticData.steerAngles);
+		}
+
+
 		reset_All_Button ();
 		//upRoad ();
 

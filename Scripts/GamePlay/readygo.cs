@@ -15,11 +15,11 @@ public class readygo : MonoBehaviour {
 		public ControlCam ControlC;
 	// Use this for initialization
 	void Start () {
-		StartCoroutine (readygogo());
+
 			centerPlayer = GameObject.FindWithTag("VRCam").transform.GetChild (0).GetChild (0).GetComponent<StereoController> ();
-
+			Cam = GameObject.FindWithTag ("VRCam").transform;
 			GameObject.Find("FinishLine").transform.GetChild(0).GetComponent<TextMesh>().text = MutliLang.LangString[72];
-
+			StartCoroutine (readygogo());
 	}
 	
 	// Update is called once per frame
@@ -32,12 +32,18 @@ public class readygo : MonoBehaviour {
 		this.gameObject.SetActive (true);
 
 		_Text.text = MutliLang.LangString[48];
-		
+			Cam.transform.GetChild (0).localPosition = new Vector3 (0, 0, 0);
+			Cam.transform.GetChild (0).localEulerAngles = new Vector3 (290, 0, 0);
+
 	
 		yield return new WaitForSeconds (1);
 	
 		centerPlayer.centerOfInterest = GameObject.Find ("CarStartPoint").transform.GetChild (0).GetChild (0);
-			GameObject.FindWithTag ("VRCam").GetComponent<Cam_SmoothFollow> ().target = GameObject.Find ("CarStartPoint").transform.GetChild (0).GetChild (0).FindChild ("LookPt");
+			Cam.GetComponent<Cam_SmoothFollow> ().target = GameObject.Find ("CarStartPoint").transform.GetChild (0).GetChild (0).FindChild ("LookPt");
+			//Cam.parent = GameObject.Find ("CarStartPoint").transform.GetChild (0).GetChild (0);
+			//Cam.localPosition = new Vector3 (0,2f,-4.5f);
+			//Cam.localEulerAngles = new Vector3 (65,0,0);
+
 		thisAudioSo.Play ();
 		thisAudioSo.volume = GameStaticData.MusicValue;
 		_Text.text = "3";
