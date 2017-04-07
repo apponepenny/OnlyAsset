@@ -196,6 +196,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		Lean();
 		InputAddSpeed ();
 
+
 	
 	}
 
@@ -206,7 +207,10 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 				GameStaticData.canButton_RT = false;
 				switch (GameStaticData.PlayMode) {
 				case GameStaticData.GameMode.GP: 
-					AddSpeedSec++;
+					
+					if (AddSpeedSec < 4) {
+						AddSpeedSec++;
+					}
 					break;
 				case GameStaticData.GameMode.MotoX:
 					//AddSpeedSec++;
@@ -237,12 +241,15 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 				case GameStaticData.GameMode.MotoX:
 					
 					//Anim.SetInteger ("Stunt", (int)AddSpeedSec);
-					AddSpeedSec++;
 
+					if (AddSpeedSec < 4) {
+						AddSpeedSec++;
+					}
 					break;
 				}
 
 			}
+
 			if (Input.GetKeyUp (KeyCode.B)) {
 			//	AddSpeedSec = 0;
 				Anim.SetInteger ("Stunt", 0);
@@ -338,6 +345,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 				this.transform.Rotate (3, 0, 0);
 			}
 
+
 		}
 
 
@@ -371,7 +379,11 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 			if (!crashed) {
 				#if UNITY_EDITOR
 				if (!changingGear) {
+					if(OnGround)
 					motorInput = Input.GetAxis ("Vertical");
+					else{
+						motorInput = 0;
+					}
 
 				} else {
 					motorInput = Mathf.Clamp (Input.GetAxis ("Vertical"), -1, 0);
@@ -441,8 +453,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 		//Engine RPM.
 		EngineRPM = Mathf.Clamp((((Mathf.Abs((FrontWheelCollider.rpm + RearWheelCollider.rpm)) * gearShiftRate) + MinEngineRPM)) / (currentGear + 1), MinEngineRPM, MaxEngineRPM);
-		if(transform.parent.name == "1")
-			print ("EngineRPM : "+ EngineRPM);
+
 		//Engine Audio Volume.
 		engineAudio.volume = Mathf.Lerp (engineAudio.volume, Mathf.Clamp (motorInput, .35f, .85f), Time.deltaTime*  5);
 		engineAudio.pitch = Mathf.Lerp ( engineAudio.pitch, Mathf.Lerp (1f, 2f, (EngineRPM - (MinEngineRPM / 1.5f)) / (MaxEngineRPM + MinEngineRPM)), Time.deltaTime * 5);
@@ -458,7 +469,8 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		}else if(!reversing && !changingGear){
 			RearWheelCollider.motorTorque = EngineTorque  * Mathf.Clamp(motorInput, 0f, 1f) * engineTorqueCurve[currentGear].Evaluate(Speed);
 		}
-
+		if(transform.parent.name == "1")
+			print (" | RearWheelCollider : "+RearWheelCollider.rpm + " | " + OnGround.ToString());
 
 		if(reversing){
 			if(Speed < 10){
@@ -471,8 +483,8 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 	}
 	public bool isBrake = false;
 	public void Braking (){
-			
-		if (Input.GetKey (KeyCode.Space) || Speed > maxSpeed || Contorl_Example.BLE_LB) {
+		
+		if (Input.GetKey (KeyCode.Space) || Speed > maxSpeed || Contorl_Example.BLE_LB || !OnGround) {
 			isBrake = true;
 			print ("space");
 		} else {
@@ -518,7 +530,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		Vector3 ColliderCenterPointFL = FrontWheelCollider.transform.TransformPoint( FrontWheelCollider.center );
 		FrontWheelCollider.GetGroundHit( out CorrespondingGroundHit );
 
-		if ( Physics.Raycast( ColliderCenterPointFL, -FrontWheelCollider.transform.up, out hit, (FrontWheelCollider.suspensionDistance + FrontWheelCollider.radius) * transform.localScale.y+5) ) {
+		if ( Physics.Raycast( ColliderCenterPointFL, -FrontWheelCollider.transform.up, out hit, (FrontWheelCollider.suspensionDistance + FrontWheelCollider.radius) * transform.localScale.y+1) ) {
 			OnGround = true;
 			if(hit.transform.gameObject.layer != LayerMask.NameToLayer("Bike")){
 				FrontWheelTransform.transform.position = hit.point + (FrontWheelCollider.transform.up * FrontWheelCollider.radius) * transform.localScale.y;
@@ -567,6 +579,8 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 		if(currentGear < _totalGears && !changingGear){
 			if(EngineRPM > (MaxEngineRPM - 500) && RearWheelCollider.rpm >= 0){
 				StartCoroutine("ChangingGear", currentGear + 1);
+	
+
 			}
 		}
 
@@ -575,6 +589,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 				
 				for(int i = 0; i < gearSpeed.Length; i++){
 					if(Speed > gearSpeed[i])
+
 						StartCoroutine("ChangingGear", i);
 				}
 				

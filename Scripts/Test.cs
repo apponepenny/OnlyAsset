@@ -13,6 +13,8 @@ public class Test : MonoBehaviour {
 	public Text a6;
 	public Text a7;
 	public Text a8;
+	public Text a9;
+
 
 
 
@@ -25,8 +27,10 @@ public class Test : MonoBehaviour {
 		a4.text = Contorl_Example.BLE_RT.ToString();
 		a5.text = Contorl_Example.BLE_LT.ToString();
 		a6.text = Contorl_Example.BLE_RL.ToString();
-		a7.text = Contorl_Example.test.ToString();
-		a8.text = Contorl_Example.test2.ToString();
+		a7.text = "X : "+ BleShootingPlugin.GetXDegree();
+		a8.text = "Y : "+ BleShootingPlugin.GetYDegree();
+		a9.text = "Z : "+ BleShootingPlugin.GetZDegree();
+
 
 
 	

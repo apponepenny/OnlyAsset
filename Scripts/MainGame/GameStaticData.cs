@@ -114,6 +114,7 @@ public class GameStaticData : MonoBehaviour {
 
 
 	IEnumerator Start(){
+		DontDestroyOnLoad (this.gameObject);
 		MidLine = Line;
 		loadTrackData.LoadDataFromXML ();
 		yield return new WaitForSeconds (0.05f);
