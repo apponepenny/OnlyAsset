@@ -250,7 +250,7 @@ namespace UnityStandardAssets.Vehicles.Car
 		void Update () {
 
 			if (GameStaticData.PlayMode == GameStaticData.GameMode.GP) {
-				Gvr.transform.GetChild (0).localEulerAngles = new Vector3 (290,0,10*GameStaticData.steerAngles);
+				Gvr.transform.GetChild (0).localEulerAngles = new Vector3 (0,0,10*GameStaticData.steerAngles);
 			}
 
 			//GameStaticData.checkPos = aaa;

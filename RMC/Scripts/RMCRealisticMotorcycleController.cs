@@ -220,9 +220,9 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 			//上面For Test
 			if (Input.GetKeyDown (KeyCode.B) || (Contorl_Example.BLE_RL && GameStaticData.canButton_RL)) {
-				GameStaticData.canButton_RL = false;
 				switch (GameStaticData.PlayMode) {
 				case GameStaticData.GameMode.GP: 
+					GameStaticData.canButton_RL = false;
 					if (AddSpeedSec > 0) {
 						AddSpeedSec--;
 						if (Effect == null)
@@ -243,16 +243,25 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 					//Anim.SetInteger ("Stunt", (int)AddSpeedSec);
 
 					if (AddSpeedSec < 4) {
-						AddSpeedSec++;
+						//AddSpeedSec += Time.deltaTime;
 					}
 					break;
 				}
 
 			}
 
+			if(Input.GetKey (KeyCode.B) || Contorl_Example.BLE_RL){
+				if (AddSpeedSec < 4) {
+					AddSpeedSec += Time.deltaTime*7;
+				}
+			}
+
 			if (Input.GetKeyUp (KeyCode.B)) {
-			//	AddSpeedSec = 0;
+				if(GameStaticData.PlayMode == GameStaticData.GameMode.MotoX)
+					AddSpeedSec = 0;
+				
 				Anim.SetInteger ("Stunt", 0);
+
 			}
 			AddSpeed ();
 		}
@@ -398,7 +407,12 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 
 				if (Contorl_Example.BLE_RB) {
-				motorInput = 1;
+					if(OnGround)
+						motorInput = 1;
+					else{
+						motorInput = 0;
+					}
+
 				} else {
 				motorInput = 0;
 				}
@@ -409,7 +423,7 @@ public class RMCRealisticMotorcycleController : MonoBehaviour {
 
 
 
-				GameStaticData.steerAngles = Contorl_Example.BLE_aY;
+				GameStaticData.steerAngles = Mathf.Clamp(Contorl_Example.BLE_aY*1.2f,-1,1);
 
 				steerInput = GameStaticData.steerAngles;
 				#endif
